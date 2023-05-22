@@ -1,0 +1,128 @@
+.landing-page-upper-container {
+  position: absolute;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+    170deg,
+    var(--black) 0%,
+    var(--grey) 90%,
+    var(--yellow) 92%,
+    var(--grey) 94%,
+    var(--yellow) 96%,
+    var(--grey) 98%,
+    var(--yellow) 99%,
+    var(--grey) 100%
+  );
+  background-size: cover;
+}
+
+/* LOGO */
+
+.logo-container {
+  position: relative;
+  width: 20vw;
+  height: 20vw;
+  min-width: 150px;
+  min-height: 150px;
+  max-width: 300px;
+  max-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: scaleLogo 1s ease-in-out;
+  animation-duration: 4s;
+}
+
+@keyframes scaleLogo {
+  0% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#logoOut {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  animation: logoOut 2s ease-in-out;
+}
+
+@keyframes logoOut {
+  0% {
+    transform: rotate(0deg) translateX(50vw);
+  }
+  100% {
+    transform: rotate(360deg) translateX(0px);
+  }
+}
+
+#logoMid {
+  position: absolute;
+  overflow: hidden;
+  top: 11%;
+  height: 60%;
+  width: 60%;
+  animation: logoMid 3s ease-in-out;
+}
+
+@keyframes logoMid {
+  0% {
+    transform: scale3d(0, 0, 0);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/* LOGO-TEXT */
+
+.landing-page-text-container {
+  position: absolute;
+  color: var(--silver);
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadein 2s;
+}
+
+.landing-text-1 {
+  animation: 2s ease-in-out slideInFromLeft;
+  visibility: visible;
+}
+
+.landing-text-2 {
+  animation: 2s ease-in-out slideInFromRight;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.first-word {
+  color: var(--yellow);
+}
