@@ -7,13 +7,11 @@ import Impressum from "./components/Impressum/Impressum";
 import AGB from "./components/AGB/AGB";
 import Datenschutz from "./components/Datenschutz/Datenschutz";
 import NavBar from "./components/NavBar/NavBar";
-import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <Footer />
 
       <Routes>
         <Route index path="/" element={<LandingPage />} />

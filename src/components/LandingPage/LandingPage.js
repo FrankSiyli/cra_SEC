@@ -1,25 +1,28 @@
 import React from "react";
 import "./LandingPage.css";
-import logoOut from "../../images/logoOuterSilver.png";
+import "../../Styles/App.css";
+import logoOut from "../../images/logoOuterMix.png";
 import logoMid from "../../images/logoMidSilver.png";
+import Footer from "../Footer/Footer";
 
 const LandingPage = () => {
   return (
     <>
       <div className="landing-page-upper-container">
         <div className="landing-page-text-container">
-          <h2 className="landing-text-1">
-            <span className="first-word">Life</span> is good.{" "}
-          </h2>
-          <h2 className="landing-text-2">
-            <span className="first-word">Triathlon</span> makes it better.
-          </h2>
+          <h1 className="landing-text-1">
+            <span className="yellow-word">LIFE</span> is good.{" "}
+          </h1>
+          <h1 className="landing-text-2">
+            <span className="yellow-word">TRIATHLON</span> makes it better.
+          </h1>
         </div>
         <div className="logo-container">
           <img id="logoOut" src={logoOut} alt="logo" />
           <img id="logoMid" src={logoMid} alt="logo" />
         </div>
       </div>
+      <Footer />
     </>
   );
 };

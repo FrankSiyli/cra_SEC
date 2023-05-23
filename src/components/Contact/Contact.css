@@ -1,0 +1,44 @@
+.contact-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+    170deg,
+    var(--black) 0%,
+    var(--grey) 90%,
+    var(--yellow) 92%,
+    var(--grey) 94%,
+    var(--yellow) 96%,
+    var(--grey) 98%,
+    var(--yellow) 99%,
+    var(--grey) 100%
+  );
+  background-size: cover;
+}
+
+.inputs {
+  width: 80%;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+.label {
+  color: var(--yellow);
+  font-size: 1.7rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}

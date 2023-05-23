@@ -1,0 +1,6 @@
+#trainingpeaks-card {
+  width: 40vw;
+  height: auto;
+  margin: 1rem;
+  box-shadow: 0 4px 30px var(--black);
+}

@@ -1,0 +1,66 @@
+/* NAV-BUTTONS */
+
+.nav-button {
+  font-size: 1.2rem;
+  background: none;
+  font-weight: bold;
+  color: var(--yellow);
+  text-decoration: none;
+  padding: 0.2rem 2rem;
+  transition: 0.1s linear;
+  cursor: pointer;
+  border-radius: 10px 0 10px 10px;
+  border: none;
+}
+
+.nav-button:hover {
+  border-radius: 10px 10px 10px 0;
+  text-decoration: underline;
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.nav-button:active {
+  transform: scale(0.95);
+}
+
+/* CONTENT-BUTTONS */
+
+.content-button {
+  font-size: 1.2rem;
+  background: var(--yellow);
+  font-weight: bold;
+  color: var(--black);
+  text-decoration: none;
+  padding: 0.3rem 1rem;
+  margin: 2rem;
+  transition: 0.1s linear;
+  cursor: pointer;
+  border-radius: 10px 0 10px 10px;
+  border: none;
+}
+
+.content-button:hover {
+  border-radius: 10px 10px 10px 0;
+  text-decoration: underline;
+  color: var(--black);
+}
+
+.content-button:active {
+  transform: scale(0.95);
+}
+
+.content-button a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.hamburger-button {
+  position: fixed;
+  z-index: 10;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
