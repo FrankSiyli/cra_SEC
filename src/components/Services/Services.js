@@ -18,6 +18,7 @@ const Services = () => {
           </h1>
           <p>
             wöchentlicher Trainingsplan auf der professionellen Plattform von
+            &nbsp;
             <Link
               className="target-link"
               target="_blank"

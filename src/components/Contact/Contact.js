@@ -13,23 +13,16 @@ const Contact = () => {
         <div className="form-container">
           <form
             className="form"
-            form
             action="https://formsubmit.co/info@siyli-endurance-coaching.com"
             method="POST"
           >
-            <h4 className="label" htmlFor="name">
-              your name
-            </h4>
+            <h4 className="label">your name</h4>
             <input type="text" className="inputs" name="name" required />
 
-            <h4 className="label" htmlFor="email">
-              your email address
-            </h4>
+            <h4 className="label">your email address</h4>
             <input type="email" className="inputs" name="email" required />
             <br />
-            <h4 className="label" htmlFor="textarea">
-              feel free
-            </h4>
+            <h4 className="label">feel free</h4>
 
             <textarea
               type="text"

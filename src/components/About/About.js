@@ -51,7 +51,7 @@ const About = () => {
               to="https://www.youtube.com/watch?v=hXKsAClUzMI"
               target="_blank"
             >
-              <p>DecaUK</p>
+              DecaUK
             </Link>
           </p>
           <br />

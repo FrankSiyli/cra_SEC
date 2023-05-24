@@ -4,6 +4,7 @@ import "../../Styles/App.css";
 import logoOut from "../../images/logoOuterMix.png";
 import logoMid from "../../images/logoMidSilver.png";
 import Footer from "../Footer/Footer";
+import CookieConsent from "react-cookie-consent";
 
 const LandingPage = () => {
   return (
@@ -23,6 +24,9 @@ const LandingPage = () => {
         </div>
       </div>
       <Footer />
+      <CookieConsent>
+        This website uses cookies to enhance the user experience.
+      </CookieConsent>
     </>
   );
 };

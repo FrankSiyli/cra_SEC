@@ -1,7 +1,7 @@
 .nav-bar {
   position: fixed;
   z-index: 10;
-  width: 40%;
+  width: auto;
   height: 10vh;
   display: flex;
   justify-content: space-between;

@@ -3,6 +3,7 @@ import "./Footer.css";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const getYear = new Date().getFullYear();
   return (
     <>
       <div className="footer-container">
@@ -16,7 +17,7 @@ const Footer = () => {
           <Link to="datenschutz" className="footer-button">
             Datenschutz
           </Link>
-          <p>copyright</p>
+          <p class="copy">Copyright &copy; 2022-{getYear}</p>
         </div>
       </div>
     </>

@@ -16,7 +16,7 @@ const NavBar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+      if (window.scrollY > 20) {
         setShowMenu(false);
         setShowHamburgerButton(true);
         setShowHamburgerMenu(false);
