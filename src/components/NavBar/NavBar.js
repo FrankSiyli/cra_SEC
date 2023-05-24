@@ -16,7 +16,7 @@ const NavBar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 20) {
         setShowMenu(false);
         setShowHamburgerButton(true);
         setShowHamburgerMenu(false);
@@ -25,29 +25,12 @@ const NavBar = () => {
       }
     };
 
-    const handleResize = () => {
-      const screenWidth = window.innerWidth;
-      const screenHeight = window.innerHeight;
-      const showHamburgerMenu = screenWidth <= 768 || screenHeight <= 500;
-
-      setShowMenu(false);
-      setShowHamburgerButton(true);
-
-      if (showHamburgerMenu) {
-        document.removeEventListener("scroll", handleScroll);
-      } else {
-        document.addEventListener("scroll", handleScroll);
-      }
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
-      document.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, [showHamburgerButton]);
+  }, []);
 
   const handleActiveStyle = (buttonId) => {
     setActiveButton(buttonId);
@@ -71,7 +54,7 @@ const NavBar = () => {
             className="nav-button"
             onClick={() => handleActiveStyle(2)}
             style={
-              activeButton === 2 ? { scale: "1.2", rotate: "45deg" } : null
+              activeButton === 2 ? { scale: "1.2", rotate: "15deg" } : null
             }
           >
             Services
@@ -81,7 +64,7 @@ const NavBar = () => {
             className="nav-button"
             onClick={() => handleActiveStyle(3)}
             style={
-              activeButton === 3 ? { scale: "1.2", rotate: "45deg" } : null
+              activeButton === 3 ? { scale: "1.2", rotate: "15deg" } : null
             }
           >
             About
@@ -91,7 +74,7 @@ const NavBar = () => {
             className="nav-button"
             onClick={() => handleActiveStyle(4)}
             style={
-              activeButton === 4 ? { scale: "1.2", rotate: "45deg" } : null
+              activeButton === 4 ? { scale: "1.2", rotate: "15deg" } : null
             }
           >
             Contact
