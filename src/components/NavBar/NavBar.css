@@ -32,6 +32,7 @@
   .nav-bar {
     display: none;
   }
+
   .menu-list {
     position: fixed;
     z-index: 10;

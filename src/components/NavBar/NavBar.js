@@ -16,7 +16,7 @@ const NavBar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
+      if (window.scrollY > 50) {
         setShowMenu(false);
         setShowHamburgerButton(true);
         setShowHamburgerMenu(false);
@@ -25,10 +25,27 @@ const NavBar = () => {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      const screenHeight = window.innerHeight;
+      const showHamburgerButton = screenWidth <= 768 || screenHeight <= 500;
+
+      setShowMenu(!showHamburgerButton);
+      setShowHamburgerButton(showHamburgerButton);
+
+      if (showHamburgerMenu) {
+        document.removeEventListener("scroll", handleScroll);
+      } else {
+        document.addEventListener("scroll", handleScroll);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+      document.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
