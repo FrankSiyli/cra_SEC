@@ -1,10 +1,13 @@
 import React from "react";
 import logoSmall from "../../images/logoSmall.png";
+import { Link } from "react-router-dom";
 
 const Impressum = () => {
   return (
     <>
-      <img id="logo-small" src={logoSmall} alt="logo" />
+      <Link to="/">
+        <img id="logo-small" src={logoSmall} alt="logo" />
+      </Link>
 
       <div className="content-container">
         <div className="single-content">

@@ -1,10 +1,13 @@
 import React from "react";
 import logoSmall from "../../images/logoSmall.png";
+import { Link } from "react-router-dom";
 
 const AGB = () => {
   return (
     <>
-      <img id="logo-small" src={logoSmall} alt="logo" />
+      <Link to="/">
+        <img id="logo-small" src={logoSmall} alt="logo" />
+      </Link>
 
       <div className="content-container">
         <div className="single-content">
@@ -145,8 +148,8 @@ const AGB = () => {
             Kenntnis auch kein Mitglied seines Haushaltes nicht wegen einer
             vorsätzlichen Straftat die die Sicherheit von Dritten gefährdet
             vorbestraft ist, insbesondere nicht wegen einer Straftat gegen die
-            sexuelle Selbstbestimmung (§§ 174 ff. StGB), einer Straftat gegen das
-            Leben (§§ 211 ff. StGB), einer Straftat gegen die körperliche
+            sexuelle Selbstbestimmung (§§ 174 ff. StGB), einer Straftat gegen
+            das Leben (§§ 211 ff. StGB), einer Straftat gegen die körperliche
             Unversehrtheit (§ 223 ff. StGB), einer Straftat gegen die
             persönliche Freiheit (§§ 232 ff. StGB), oder wegen eines Diebstahl
             und Unterschlagung (§§ 242 ff. StGB) oder des Raubes und der

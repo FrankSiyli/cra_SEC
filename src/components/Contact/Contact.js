@@ -8,7 +8,9 @@ const Contact = () => {
   return (
     <>
       <Overlay />
+
       <img id="logo-small" src={logoSmall} alt="logo" />
+
       <div className="contact-container">
         <div className="form-container">
           <form
