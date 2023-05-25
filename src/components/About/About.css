@@ -16,3 +16,12 @@
   margin: 1rem;
   border-radius: 5px;
 }
+
+#deca {
+  width: 30vw;
+  max-width: 400px;
+
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 30px var(--black);
+}

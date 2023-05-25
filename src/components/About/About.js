@@ -7,6 +7,7 @@ import trainingpeaksLogo from "../../images/trainingpeaks_logo_2.png";
 import union from "../../images/union.png";
 import { Link } from "react-router-dom";
 import logoSmall from "../../images/logoSmall.png";
+import deca from "../../images/deca.png";
 
 const About = () => {
   return (
@@ -54,6 +55,8 @@ const About = () => {
               DecaUK
             </Link>
           </p>
+          <br />
+          <img id="deca" src={deca} alt="deca uk" />
           <br />
           <p>
             <span className="yellow-word">10x Langdistanz</span>

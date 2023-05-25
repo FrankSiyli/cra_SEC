@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import "../../Styles/App.css";
 import "./Services.css";
 import logoSmall from "../../images/logoSmall.png";
+import bike from "../../images/bike.png";
+import brutal from "../../images/theBrutal.png";
 
 import trainingpeaksCard from "../../images/TrainingPeaks_Product.png";
 
@@ -97,6 +99,9 @@ const Services = () => {
             <p>75€/h</p>
             <p>zzgl. Anfahrt und Eintritt</p>
           </div>
+          <br />
+          <img id="bike" src={bike} alt="bike" />
+          <br />
         </div>
 
         <div className="single-content">
@@ -130,6 +135,9 @@ const Services = () => {
               Schwellenwert.
             </p>
           </div>
+          <br />
+          <img id="the-brutal" src={brutal} alt="brutal triathlon" />
+          <br />
         </div>
       </div>
     </>
