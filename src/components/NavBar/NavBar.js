@@ -78,7 +78,9 @@ const NavBar = () => {
             to="/"
             className="nav-button"
             onClick={() => handleActiveStyle(1)}
-            style={activeButton === 1 ? { scale: "1.2" } : null}
+            style={
+              activeButton === 1 ? { scale: "1.2", rotate: "15deg" } : null
+            }
           >
             Home
           </Link>
@@ -139,9 +141,8 @@ const NavBar = () => {
                 style={
                   activeButton === 1
                     ? {
-                        textDecoration: "underline",
                         scale: "1.2",
-                        textDecorationColor: "var(--silver)",
+                        rotate: "15deg",
                       }
                     : null
                 }
@@ -156,9 +157,8 @@ const NavBar = () => {
                 style={
                   activeButton === 2
                     ? {
-                        textDecoration: "underline",
                         scale: "1.2",
-                        textDecorationColor: "var(--silver)",
+                        rotate: "15deg",
                       }
                     : null
                 }
@@ -173,9 +173,8 @@ const NavBar = () => {
                 style={
                   activeButton === 3
                     ? {
-                        textDecoration: "underline",
                         scale: "1.2",
-                        textDecorationColor: "var(--silver)",
+                        rotate: "15deg",
                       }
                     : null
                 }
@@ -190,9 +189,8 @@ const NavBar = () => {
                 style={
                   activeButton === 4
                     ? {
-                        textDecoration: "underline",
                         scale: "1.2",
-                        textDecorationColor: "var(--silver)",
+                        rotate: "15deg",
                       }
                     : null
                 }
