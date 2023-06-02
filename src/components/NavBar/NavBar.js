@@ -4,8 +4,13 @@ import "../../Styles/App.css";
 import "../../Styles/Buttons.css";
 import hamburger from "../../images/hamburger.png";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const NavBar = () => {
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
   const [showMenu, setShowMenu] = useState(true);
   const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);
   const [showHamburgerButton, setShowHamburgerButton] = useState(false);
@@ -59,6 +64,14 @@ const NavBar = () => {
     <>
       {showMenu ? (
         <div className="nav-bar">
+          <div className="language-button">
+            <button type="button" onClick={() => changeLanguage("de")}>
+              🇩🇪
+            </button>
+            <button type="button" onClick={() => changeLanguage("en")}>
+              🇬🇧
+            </button>
+          </div>
           <Link
             to="/"
             className="nav-button"

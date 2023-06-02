@@ -5,10 +5,11 @@ import "./Services.css";
 import logoSmall from "../../images/logoSmall.png";
 import bike from "../../images/bike.png";
 import brutal from "../../images/theBrutal.png";
-
+import { useTranslation } from "react-i18next";
 import trainingpeaksCard from "../../images/TrainingPeaks_Product.png";
 
 const Services = () => {
+  const { t } = useTranslation();
   return (
     <>
       <img id="logo-small" src={logoSmall} alt="logo" />
@@ -16,10 +17,11 @@ const Services = () => {
       <div className="content-container">
         <div className="single-content">
           <h1>
-            <span className="yellow-word">Trainingsplan</span>erstellung
+            <span className="yellow-word">{t("servicesTitle_1_1")}</span>
+            {t("servicesTitle_1_2")}
           </h1>
           <p>
-            wöchentlicher Trainingsplan auf der professionellen Plattform von
+            {t("servicesText_1")}
             &nbsp;
             <Link
               className="target-link"
@@ -30,74 +32,63 @@ const Services = () => {
             </Link>
           </p>
           <p>
-            angepasst an dich und{" "}
-            <span className="yellow-word">dein Leben</span>
+            {t("servicesText_2")}
+            <span className="yellow-word">{t("servicesText_3")}</span>
           </p>
           <p>
-            <span className="yellow-word">unbegrenzte Kontaktmöglichkeit</span>
+            <span className="yellow-word">{t("servicesText_4")}</span>
           </p>
           <p>
-            auf Wunsch{" "}
-            <span className="yellow-word">zyklusbasiertes Training</span>
+            {t("servicesText_5")}
+            <span className="yellow-word">{t("servicesText_6")}</span>
           </p>
           <p>
-            Unterstützung bei{" "}
-            <span className="yellow-word">
-              Zielsetzungen, Materialauswahl und Ernährung
-            </span>
+            {t("servicesText_7")}
+            <span className="yellow-word">{t("servicesText_8")}</span>
           </p>
-          <p>monatlich kündbar</p>
+          <p>{t("servicesText_9")}</p>
           <img
             id="trainingpeaks-card"
             src={trainingpeaksCard}
             alt="trainingpeaks"
           />
+          <p>{t("servicesText_10")}</p>
+          <p>{t("servicesText_11")}</p>
+          <p>{t("servicesText_12")}</p>
+          <p>{t("servicesText_13")}</p>
+          <p>{t("servicesText_14")}</p>
           <p>
-            Schwimm- Rad- und Laufeinheiten in abwechslungsreichen Intensitäten
-            und Umfängen
-          </p>
-          <p>beschriebene Stabilisationseinheiten</p>
-          <p>Yogaeinheiten</p>
-          <p>
-            weitere Regenerationseinheiten mit der Faszienrolle und dem
-            Theraband
-          </p>
-          <p>detaillierte Wettkampfvorbereitung</p>
-          <p>
-            <span className="yellow-word">Leistungstests</span>
+            <span className="yellow-word">{t("servicesText_15")}</span>
           </p>
           <p>
-            <span className="yellow-word">wöchentliches Feedback</span>
+            <span className="yellow-word">{t("servicesText_16")}</span>
           </p>
           <br />
-          <p>150€ mtl.</p>
-          <p>für Triathlon-coaching</p>
+          <p>150€ {t("servicesText_17")}</p>
+          <p>{t("servicesText_18")}</p>
           <p>
-            <span className="yellow-word">
-              inklusive Trainingpeaks Premium account
-            </span>
+            <span className="yellow-word">{t("servicesText_19")}</span>
           </p>
           <br />
-          <p>115€ mtl.</p>
-          <p>für Einzelsport-coaching // swim / bike / run</p>
+          <p>115€ {t("servicesText_17")}</p>
+          <p>{t("servicesText_20")}// swim / bike / run</p>
           <p>
-            <span className="yellow-word">
-              inklusive Trainingpeaks Premium account
-            </span>
+            <span className="yellow-word">{t("servicesText_19")}</span>
           </p>{" "}
         </div>
 
         <div className="single-content">
           <div>
             <h1>
-              <span className="yellow-word">1:1</span> Coachingstunde
+              <span className="yellow-word">1:1</span>
+              {t("servicesTitle_2")}
             </h1>
             <p>swim // bike // run</p>
-            <p>an einem Ort deiner Wahl oder per Videocall</p>
-            <p>Technikanalyse</p>
-            <p>Tipps und Tricks</p>
+            <p>{t("servicesText_21")}</p>
+            <p>{t("servicesText_22")}</p>
+            <p>{t("servicesText_23")}</p>
             <p>75€/h</p>
-            <p>zzgl. Anfahrt und Eintritt</p>
+            <p>{t("servicesText_24")}</p>
           </div>
           <br />
           <img id="bike" src={bike} alt="bike" />
@@ -107,33 +98,21 @@ const Services = () => {
         <div className="single-content">
           <div>
             <h1>
-              <span className="yellow-word">Statische</span> Trainingspläne
+              <span className="yellow-word">{t("servicesTitle_3_1")}</span>
+              {t("servicesTitle_3_2")}
             </h1>
-            <p>
-              Falls dir ein statischer Plan ausreicht schau gern mal in meine
-              Trainingsplanbibliothek.
-            </p>
+            <p>{t("servicesText_25")}</p>
             <button className="content-button">
               <Link
                 target="_blank"
                 to="https://www.trainingpeaks.com/coach/siyli-endurance-coaching#trainingplans"
               >
-                Trainingsplanbibliothek bei Trainingpeaks
+                {t("servicesText_26")}
               </Link>
             </button>
-            <p>
-              Der Trainingpeaks Basis-account ist für dich kostenlos mit dabei,
-              so dass du sofort starten kannst.
-            </p>
-            <p>
-              Falls du einen statischen Plan zur Vorbereitung auf ein Event
-              benötigst (1-3 Monate) schreibe mir gern eine Nachricht.
-            </p>
-            <p>
-              Trainingpeaks benötigt für die Berechnung deiner
-              Trainingseinheiten entweder deinen Maximalpuls oder deinen
-              Schwellenwert.
-            </p>
+            <p>{t("servicesText_27")}</p>
+            <p>{t("servicesText_28")}</p>
+            <p>{t("servicesText_29")}</p>
           </div>
           <br />
           <img id="the-brutal" src={brutal} alt="brutal triathlon" />

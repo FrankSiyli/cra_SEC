@@ -8,8 +8,11 @@ import union from "../../images/union.png";
 import { Link } from "react-router-dom";
 import logoSmall from "../../images/logoSmall.png";
 import deca from "../../images/deca.png";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <img id="logo-small" src={logoSmall} alt="logo" />
@@ -20,16 +23,20 @@ const About = () => {
             <span className="yellow-word">Moin</span>
           </h2>
           <br />
-          <p>Ich bin Frank aus Hamburg</p>
-          <p>und unterstütze seit 2017</p>
+          <p>{t("aboutText_1")}</p>
+          <p>{t("aboutText_2")}</p>
           <p>
-            Athlet:innen dabei ihre <span className="yellow-word">Träume</span>{" "}
-            zu verwirklichen.
+            {t("aboutText_3")}
+            <span className="yellow-word">{t("aboutText_4")}</span>
+            {t("aboutText_5")}
           </p>
           <img className="about-logos" src={avatar} alt="itsme" />
           <p>
-            Ich bin lizensierter <span className="yellow-word">DTU</span> und{" "}
-            <span className="yellow-word">Trainingpeaks</span> Trainer.
+            {t("aboutText_6")}
+            <span className="yellow-word">DTU</span>
+            {t("aboutText_7")}
+            <span className="yellow-word">Trainingpeaks</span>
+            {t("aboutText_8")}.
           </p>
           <img className="about-logos" src={dtu} alt="dtu" />
           <img
@@ -40,12 +47,14 @@ const About = () => {
         </div>
         <div className="single-content">
           <p>
-            Als Athlet fühle ich mich auf den{" "}
-            <span className="yellow-word">Ultradistanzen</span> zu Hause.
+            {t("aboutText_9")}
+            <span className="yellow-word">{t("aboutText_10")}</span>{" "}
+            {t("aboutText_11")}.
           </p>
           <p>
-            Diese Leidenschaft führte 2022 zu einem{" "}
-            <span className="yellow-word">Finish</span> beim
+            {t("aboutText_12")}
+            <span className="yellow-word">Finish</span>
+            {t("aboutText_13")}
             <br />
             <Link
               className="target-link"
@@ -59,7 +68,10 @@ const About = () => {
           <img id="deca" src={deca} alt="deca uk" />
           <br />
           <p>
-            <span className="yellow-word">10x Langdistanz</span>
+            <span className="yellow-word">
+              10x
+              {t("aboutText_14")}
+            </span>
           </p>
           <p>
             <span className="yellow-word">38km</span> Swim -{" "}
@@ -69,31 +81,34 @@ const About = () => {
         </div>
         <div className="single-content">
           <p>
-            Wenn du Lust hast mit mir{" "}
-            <span className="yellow-word">zusammen</span>
+            {t("aboutText_15")}
+            <span className="yellow-word">{t("aboutText_16")}</span>
           </p>
           <p>
-            deine <span className="yellow-word">Grenzen zu verschieben</span>
+            {t("aboutText_17")}
+            <span className="yellow-word">{t("aboutText_18")}</span>
           </p>
           <p>
-            deinen <span className="yellow-word">ersten Triathlon</span> zu
-            finishen
+            {t("aboutText_19")}
+            <span className="yellow-word">{t("aboutText_20")}</span>
+            {t("aboutText_21")}
           </p>
           <p>
-            in die <span className="yellow-word">Faszination</span> des
-            Ultratriathlons einzutauchen
+            {t("aboutText_22")}
+            <span className="yellow-word">{t("aboutText_23")}</span>
+            {t("aboutText_24")}
           </p>
-          <p>einen Weg raus aus einer Verletzungsphase zu finden</p>
+          <p>{t("aboutText_25")}</p>
           <p>
-            <span className="yellow-word">mit einem Lächeln</span> deine
-            Komfortzone zu verlassen
+            <span className="yellow-word">{t("aboutText_26")}</span>
+            {t("aboutText_27")}
           </p>
 
-          <p>dann schreibe mir gern eine Nachricht.</p>
+          <p>{t("aboutText_28")}.</p>
           <br />
           <p>All training sessions are in german and english</p>
           <img className="union" src={union} alt="english" />
-          <p>if you have any questions please send me a message.</p>
+          <p>if you have any questions let me know it.</p>
         </div>
       </div>
     </>

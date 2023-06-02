@@ -51,3 +51,9 @@
 #hamburger {
   height: 3rem;
 }
+
+.language-button {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+}
