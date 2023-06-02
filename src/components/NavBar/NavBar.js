@@ -6,6 +6,8 @@ import hamburger from "../../images/hamburger.png";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import union from "../../images/union.png";
+import german from "../../images/germany.png";
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 const NavBar = () => {
   const { t, i18n } = useTranslation();
@@ -72,11 +74,6 @@ const NavBar = () => {
     <>
       {showMenu ? (
         <div className="nav-bar">
-          <div className="language-button">
-            <button type="button" onClick={toggleLanguage}>
-              <img className="language-button" src={union} alt="english" />
-            </button>
-          </div>
           <Link
             to="/"
             className="nav-button"
@@ -115,6 +112,15 @@ const NavBar = () => {
           >
             Contact
           </Link>
+          <div>
+            <button type="button" onClick={toggleLanguage}>
+              {currentLanguage === "de" ? (
+                <span className="fi fi-gb "></span>
+              ) : (
+                <span className="fi fi-de "></span>
+              )}
+            </button>
+          </div>
         </div>
       ) : (
         <div className="hamburger-menu">
@@ -193,9 +199,13 @@ const NavBar = () => {
               >
                 Contact
               </Link>
-              <div className="language-button">
+              <div>
                 <button type="button" onClick={toggleLanguage}>
-                  <img className="language-button" src={union} alt="english" />
+                  {currentLanguage === "de" ? (
+                    <span className="fi fi-gb "></span>
+                  ) : (
+                    <span className="fi fi-de "></span>
+                  )}
                 </button>
               </div>
             </div>
