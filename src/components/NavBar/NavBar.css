@@ -53,7 +53,14 @@
 }
 
 .language-button {
-  width: 50px;
+  width: 35px;
   height: auto;
+  border-radius: 5px;
+  background: none;
+  margin: -0.3rem;
   cursor: pointer;
+}
+
+.language-button:active {
+  scale: 0.95;
 }

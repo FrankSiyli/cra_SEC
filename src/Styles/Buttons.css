@@ -16,8 +16,6 @@
 .nav-button:hover {
   border-radius: 10px 10px 10px 0;
   text-decoration: underline;
-  background: var(--yellow);
-  color: var(--black);
 }
 
 .nav-button:active {

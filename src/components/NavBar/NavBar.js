@@ -5,9 +5,17 @@ import "../../Styles/Buttons.css";
 import hamburger from "../../images/hamburger.png";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import union from "../../images/union.png";
 
 const NavBar = () => {
   const { t, i18n } = useTranslation();
+
+  const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
+  const toggleLanguage = () => {
+    const newLanguage = currentLanguage === "en" ? "de" : "en";
+    setCurrentLanguage(newLanguage);
+    i18n.changeLanguage(newLanguage);
+  };
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
@@ -65,11 +73,8 @@ const NavBar = () => {
       {showMenu ? (
         <div className="nav-bar">
           <div className="language-button">
-            <button type="button" onClick={() => changeLanguage("de")}>
-              🇩🇪
-            </button>
-            <button type="button" onClick={() => changeLanguage("en")}>
-              🇬🇧
+            <button type="button" onClick={toggleLanguage}>
+              <img className="language-button" src={union} alt="english" />
             </button>
           </div>
           <Link
@@ -188,6 +193,11 @@ const NavBar = () => {
               >
                 Contact
               </Link>
+              <div className="language-button">
+                <button type="button" onClick={toggleLanguage}>
+                  <img className="language-button" src={union} alt="english" />
+                </button>
+              </div>
             </div>
           )}
         </div>
