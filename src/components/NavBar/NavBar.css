@@ -51,3 +51,8 @@
 #hamburger {
   height: 3rem;
 }
+
+.fi {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
