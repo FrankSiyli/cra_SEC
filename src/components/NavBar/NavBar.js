@@ -115,7 +115,11 @@ const NavBar = () => {
             Contact
           </Link>
           <div>
-            <button type="button" onClick={toggleLanguage}>
+            <button
+              className="language-button"
+              type="button"
+              onClick={toggleLanguage}
+            >
               {currentLanguage === "de" ? (
                 <span className="fi fi-gb "></span>
               ) : (
@@ -198,7 +202,11 @@ const NavBar = () => {
                 Contact
               </Link>
               <div>
-                <button type="button" onClick={toggleLanguage}>
+                <button
+                  className="language-button"
+                  type="button"
+                  onClick={toggleLanguage}
+                >
                   {currentLanguage === "de" ? (
                     <span className="fi fi-gb "></span>
                   ) : (
