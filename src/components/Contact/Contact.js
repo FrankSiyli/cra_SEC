@@ -12,13 +12,12 @@ const Contact = () => {
       initial={{ width: 0 }}
       animate={{ width: "100%" }}
       exit={{ x: "100%", opacity: 0 }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 2, type: "spring", stiffness: 100 }}
     >
       <Overlay />
 
       <img id="logo-small" src={logoSmall} alt="logo" />
-
-      <div className="contact-container">
+      <div className="content-container">
         <div className="form-container">
           <form
             className="form"

@@ -14,7 +14,7 @@ const LandingPage = () => {
       initial={{ width: 0 }}
       animate={{ width: "100%" }}
       exit={{ x: "100%", opacity: 0 }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 2, type: "spring", stiffness: 100 }}
     >
       <div className="landing-page-upper-container">
         <div className="landing-page-text-container">

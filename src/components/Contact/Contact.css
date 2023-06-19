@@ -36,6 +36,7 @@
 }
 
 .form-container {
+  margin-top: -10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
