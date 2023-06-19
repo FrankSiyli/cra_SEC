@@ -1,10 +1,17 @@
 import React from "react";
 import logoSmall from "../../images/logoSmall.png";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const AGB = () => {
   return (
-    <>
+    <motion.main
+      className="main__container"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: "100%", opacity: 0 }}
+      transition={{ duration: 2, type: "spring", stiffness: 100 }}
+    >
       <Link to="/">
         <img id="logo-small" src={logoSmall} alt="logo" />
       </Link>
@@ -508,7 +515,7 @@ const AGB = () => {
           </p>
         </div>
       </div>
-    </>
+    </motion.main>
   );
 };
 
