@@ -11,8 +11,8 @@ const Contact = () => {
       className="main__container"
       initial={{ width: 0 }}
       animate={{ width: "100%" }}
-      exit={{ x: "100%" }}
-      transition={{ duration: 1 }}
+      exit={{ x: "100%", opacity: 0 }}
+      transition={{ duration: 2 }}
     >
       <Overlay />
 
