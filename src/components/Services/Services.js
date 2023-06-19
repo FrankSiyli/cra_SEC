@@ -7,11 +7,18 @@ import bike from "../../images/bike.png";
 import brutal from "../../images/theBrutal.png";
 import { useTranslation } from "react-i18next";
 import trainingpeaksCard from "../../images/TrainingPeaks_Product.png";
+import { motion } from "framer-motion";
 
 const Services = () => {
   const { t } = useTranslation();
   return (
-    <>
+    <motion.main
+      className="main__container"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: "100%" }}
+      transition={{ duration: 1 }}
+    >
       <img id="logo-small" src={logoSmall} alt="logo" />
 
       <div className="content-container">
@@ -119,7 +126,7 @@ const Services = () => {
           <br />
         </div>
       </div>
-    </>
+    </motion.main>
   );
 };
 

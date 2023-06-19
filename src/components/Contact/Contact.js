@@ -3,10 +3,17 @@ import "../../Styles/App.css";
 import "./Contact.css";
 import logoSmall from "../../images/logoSmall.png";
 import Overlay from "../Overlay/Overlay";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <>
+    <motion.main
+      className="main__container"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: "100%" }}
+      transition={{ duration: 1 }}
+    >
       <Overlay />
 
       <img id="logo-small" src={logoSmall} alt="logo" />
@@ -40,7 +47,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </>
+    </motion.main>
   );
 };
 

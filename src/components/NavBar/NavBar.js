@@ -5,8 +5,6 @@ import "../../Styles/Buttons.css";
 import hamburger from "../../images/hamburger.png";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import union from "../../images/union.png";
-import german from "../../images/germany.png";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 const NavBar = () => {
@@ -18,9 +16,7 @@ const NavBar = () => {
     setCurrentLanguage(newLanguage);
     i18n.changeLanguage(newLanguage);
   };
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
+
   const [showMenu, setShowMenu] = useState(true);
   const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);
   const [showHamburgerButton, setShowHamburgerButton] = useState(false);

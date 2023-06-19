@@ -9,12 +9,19 @@ import { Link } from "react-router-dom";
 import logoSmall from "../../images/logoSmall.png";
 import deca from "../../images/deca.png";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
 const About = () => {
   const { t } = useTranslation();
 
   return (
-    <>
+    <motion.main
+      className="main__container"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: "100%" }}
+      transition={{ duration: 1 }}
+    >
       <img id="logo-small" src={logoSmall} alt="logo" />
 
       <div className="content-container">
@@ -111,7 +118,7 @@ const About = () => {
           <p>if you have any questions let me know it.</p>
         </div>
       </div>
-    </>
+    </motion.main>
   );
 };
 
