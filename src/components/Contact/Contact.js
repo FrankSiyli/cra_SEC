@@ -5,13 +5,17 @@ import logoSmall from "../../images/logoSmall.png";
 import Overlay from "../Overlay/Overlay";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const location = useLocation();
 
   return (
     <>
-      <img id="logo-small" src={logoSmall} alt="logo" />
+      <Link to="/">
+        <img id="logo-small" src={logoSmall} alt="logo" />
+      </Link>
+
       <motion.main
         className="main__container"
         key={location.contact}

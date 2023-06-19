@@ -18,7 +18,9 @@ const About = () => {
 
   return (
     <>
-      <img id="logo-small" src={logoSmall} alt="logo" />
+      <Link to="/">
+        <img id="logo-small" src={logoSmall} alt="logo" />
+      </Link>
       <motion.main
         className="main__container"
         key={location.about}
