@@ -11,10 +11,17 @@ const LandingPage = () => {
   return (
     <motion.main
       className="main__container"
-      initial={{ width: 0 }}
-      animate={{ width: "100%" }}
-      exit={{ x: "100%", opacity: 0 }}
-      transition={{ duration: 2 }}
+      initial={{ x: 300, opacity: 1 }}
+      animate={{
+        x: 0,
+        opacity: 1,
+        transition: {
+          type: "spring",
+          stiffness: 260,
+          damping: 20,
+        },
+      }}
+      exit={{ x: 300, opacity: 0 }}
     >
       <div className="landing-page-upper-container">
         <div className="landing-page-text-container">
