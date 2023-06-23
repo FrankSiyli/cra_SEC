@@ -1,7 +1,6 @@
 import React from "react";
 import logoSmall from "../../images/logoSmall.png";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 
 const AGB = () => {
   return (
@@ -9,20 +8,7 @@ const AGB = () => {
       <Link to="/">
         <img id="logo-small" src={logoSmall} alt="logo" />
       </Link>
-      <motion.main
-        className="main__container"
-        initial={{ x: 300, opacity: 1 }}
-        animate={{
-          x: 0,
-          opacity: 1,
-          transition: {
-            type: "spring",
-            stiffness: 260,
-            damping: 20,
-          },
-        }}
-        exit={{ x: 300, opacity: 0 }}
-      >
+      
         <div className="content-container">
           <div className="single-content">
             <p>
@@ -533,7 +519,6 @@ const AGB = () => {
             </p>
           </div>
         </div>
-      </motion.main>
     </>
   );
 };

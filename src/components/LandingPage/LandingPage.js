@@ -5,24 +5,10 @@ import logoOut from "../../images/logoOuterMix.png";
 import logoMid from "../../images/logoMidSilver.png";
 import Footer from "../Footer/Footer";
 import CookieConsent from "react-cookie-consent";
-import { motion } from "framer-motion";
 
 const LandingPage = () => {
-  return (
-    <motion.main
-      className="main__container"
-      initial={{ x: 300, opacity: 1 }}
-      animate={{
-        x: 0,
-        opacity: 1,
-        transition: {
-          type: "spring",
-          stiffness: 260,
-          damping: 20,
-        },
-      }}
-      exit={{ x: 300, opacity: 0 }}
-    >
+  return (<>
+    
       <div className="landing-page-upper-container">
         <div className="landing-page-text-container">
           <h1 className="landing-text-1">
@@ -41,7 +27,7 @@ const LandingPage = () => {
       <CookieConsent>
         This website uses cookies to enhance the user experience.
       </CookieConsent>
-    </motion.main>
+      </>
   );
 };
 

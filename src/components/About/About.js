@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 import logoSmall from "../../images/logoSmall.png";
 import deca from "../../images/deca.png";
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 
 const About = () => {
@@ -21,21 +20,7 @@ const About = () => {
       <Link to="/">
         <img id="logo-small" src={logoSmall} alt="logo" />
       </Link>
-      <motion.main
-        className="main__container"
-        key={location.about}
-        initial={{ x: 300, opacity: 1 }}
-        animate={{
-          x: 0,
-          opacity: 1,
-          transition: {
-            type: "spring",
-            stiffness: 260,
-            damping: 20,
-          },
-        }}
-        exit={{ x: 300, opacity: 0 }}
-      >
+      
         <div className="content-container">
           <div className="single-content">
             <h2>
@@ -130,7 +115,7 @@ const About = () => {
             <p>if you have any questions let me know it.</p>
           </div>
         </div>
-      </motion.main>
+      
     </>
   );
 };
