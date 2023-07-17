@@ -24,13 +24,13 @@ const Contact = () => {
             action="https://formsubmit.co/info@siyli-endurance-coaching.com"
             method="POST"
           >
-            <h4 className="label">your name</h4>
+            <p className="label">Your name</p>
             <input type="text" className="inputs" name="name" required />
 
-            <h4 className="label">your email address</h4>
+            <p className="label">Your email</p>
             <input type="email" className="inputs" name="email" required />
             <br />
-            <h4 className="label">feel free</h4>
+            <p className="label">Feel free</p>
 
             <textarea
               type="text"

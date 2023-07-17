@@ -32,17 +32,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: scaleLogo 1s ease-in-out;
-  animation-duration: 4s;
-}
-
-@keyframes scaleLogo {
-  0% {
-    transform: scale(2);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 
 #logoOut {
@@ -50,16 +39,6 @@
   overflow: hidden;
   height: 100%;
   width: 100%;
-  animation: logoOut 2s ease-in-out;
-}
-
-@keyframes logoOut {
-  0% {
-    transform: rotate(0deg) translateX(50vw);
-  }
-  100% {
-    transform: rotate(360deg) translateX(0px);
-  }
 }
 
 #logoMid {
@@ -68,16 +47,6 @@
   top: 15%;
   height: 50%;
   width: 50%;
-  animation: logoMid 3s ease-in-out;
-}
-
-@keyframes logoMid {
-  0% {
-    transform: scale3d(0, 0, 0);
-  }
-  100% {
-    transform: scale3d(1, 1, 1);
-  }
 }
 
 /* LOGO-TEXT */
@@ -95,7 +64,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  animation: fadein 2s;
+  animation: fadein 1s;
 }
 
 .landing-text-1 {
@@ -124,5 +93,3 @@
     transform: translateY(0);
   }
 }
-
-

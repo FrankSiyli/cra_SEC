@@ -116,8 +116,6 @@ const Services = () => {
               </Link>
             </button>
             <p>{t("servicesText_27")}</p>
-            <p>{t("servicesText_28")}</p>
-            <p>{t("servicesText_29")}</p>
           </div>
           <br />
           <img id="the-brutal" src={brutal} alt="brutal triathlon" />
