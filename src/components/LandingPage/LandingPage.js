@@ -1,14 +1,14 @@
 import React from "react";
 import "./LandingPage.css";
 import "../../Styles/App.css";
-import logoOut from "../../images/logoOuterMix.png";
+import logoOut from "../../images/logoOuterSilver.png";
 import logoMid from "../../images/logoMidSilver.png";
 import Footer from "../Footer/Footer";
 import CookieConsent from "react-cookie-consent";
 
 const LandingPage = () => {
-  return (<>
-    
+  return (
+    <>
       <div className="landing-page-upper-container">
         <div className="landing-page-text-container">
           <h1 className="landing-text-1">
@@ -27,7 +27,7 @@ const LandingPage = () => {
       <CookieConsent>
         This website uses cookies to enhance the user experience.
       </CookieConsent>
-      </>
+    </>
   );
 };
 

@@ -10,8 +10,8 @@
 
 :root {
   --grey: #393f4d;
-  --yellow: #feda6a;
-  --silver: #e9e4e4;
+  --yellow: #00a3b1;
+  --silver: #f5f4f5;
   --black: #1d1e22;
 }
 
@@ -27,16 +27,16 @@ body {
   flex-direction: column;
   width: 100vw;
   height: auto;
-  background: linear-gradient(
-    170deg,
-    var(--black) 0%,
-    var(--grey) 90%,
-    var(--yellow) 92%,
-    var(--grey) 94%,
-    var(--yellow) 96%,
-    var(--grey) 98%,
-    var(--yellow) 99%,
-    var(--grey) 100%
+  background-image: linear-gradient(
+    to right bottom,
+    #1d2732,
+    #232f3c,
+    #293746,
+    #2f3f50,
+    #2f3f50,
+    #293746,
+    #232f3c,
+    #1d2732
   );
   background-size: cover;
 }
@@ -91,12 +91,12 @@ body {
   font-size: 1.3rem;
   line-height: 2rem;
   text-align: center;
-  background: rgba(255, 255, 255, 0.1);
+  _background: rgba(255, 255, 255, 0.1);
   border-radius: 16px;
-  box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.7);
+  _box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(7.2px);
   -webkit-backdrop-filter: blur(7.2px);
-  border: 1px solid var(--silver);
+  _border: 1px solid var(--silver);
 }
 
 @media screen and (max-width: 768px) {
