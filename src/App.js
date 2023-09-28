@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, Link } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import About from "./components/About/About";
 import LandingPage from "./components/LandingPage/LandingPage";
@@ -8,12 +8,17 @@ import Impressum from "./components/Impressum/Impressum";
 import AGB from "./components/AGB/AGB";
 import Datenschutz from "./components/Datenschutz/Datenschutz";
 import NavBar from "./components/NavBar/NavBar";
+import logoSmall from "./images/logoSmall.png";
+import "./Styles/App.css";
 
 function App() {
   const location = useLocation();
 
   return (
     <div className="App">
+      <Link to="/">
+        <img id="logo-small" src={logoSmall} alt="logo" />
+      </Link>
       <NavBar />
 
       <AnimatePresence>

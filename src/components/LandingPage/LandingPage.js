@@ -1,10 +1,9 @@
 import React from "react";
 import "./LandingPage.css";
 import "../../Styles/App.css";
-import logoOut from "../../images/logoOuterSilver.png";
-import logoMid from "../../images/logoMidSilver.png";
 import Footer from "../Footer/Footer";
 import CookieConsent from "react-cookie-consent";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
@@ -17,10 +16,6 @@ const LandingPage = () => {
           <h1 className="landing-text-2">
             <span className="yellow-word">TRIATHLON</span> makes it better.
           </h1>
-        </div>
-        <div className="logo-container">
-          <img id="logoOut" src={logoOut} alt="logo" />
-          <img id="logoMid" src={logoMid} alt="logo" />
         </div>
       </div>
       <Footer />

@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../Styles/App.css";
 import "./Services.css";
-import logoSmall from "../../images/logoSmall.png";
 import bike from "../../images/bike.png";
 import brutal from "../../images/theBrutal.png";
 import { useTranslation } from "react-i18next";
@@ -15,9 +14,9 @@ const Services = () => {
 
   return (
     <>
-      <Link to="/">
+      {/* <Link to="/">
         <img id="logo-small" src={logoSmall} alt="logo" />
-      </Link>
+      </Link> */}
 
       <div className="content-container">
         <div className="single-content">
