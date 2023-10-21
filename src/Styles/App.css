@@ -27,17 +27,7 @@ body {
   flex-direction: column;
   width: 100vw;
   height: auto;
-  background-image: linear-gradient(
-    to right bottom,
-    #1d2732,
-    #232f3c,
-    #293746,
-    #2f3f50,
-    #2f3f50,
-    #293746,
-    #232f3c,
-    #1d2732
-  );
+  background-color: #1d2732;
   background-size: cover;
 }
 

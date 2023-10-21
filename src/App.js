@@ -1,4 +1,5 @@
-import { Routes, Route, useLocation, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
+import { useLocation } from "react-router";
 import { AnimatePresence } from "framer-motion";
 import About from "./components/About/About";
 import LandingPage from "./components/LandingPage/LandingPage";
