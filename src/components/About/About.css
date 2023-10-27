@@ -24,3 +24,11 @@
   border-radius: 5px;
   box-shadow: 0 4px 30px var(--black);
 }
+#avatar {
+  width: 40vw;
+  max-width: 600px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 30px var(--black);
+  margin: 3rem;
+}
