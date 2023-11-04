@@ -106,15 +106,22 @@ const Services = () => {
               {t("servicesTitle_3_2")}
             </h1>
             <p>{t("servicesText_25")}</p>
+
+            <button className="content-button">
+              <Link target="_blank" to="https://siyli-app.vercel.app">
+                Siyli-App
+              </Link>
+            </button>
+
+            <p>{t("servicesText_27")}</p>
             <button className="content-button">
               <Link
                 target="_blank"
                 to="https://www.trainingpeaks.com/coach/siyli-endurance-coaching#trainingplans"
               >
-                {t("servicesText_26")}
+                Trainingpeaks
               </Link>
             </button>
-            <p>{t("servicesText_27")}</p>
           </div>
           <br />
           <img id="the-brutal" src={brutal} alt="brutal triathlon" />

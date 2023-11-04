@@ -3,7 +3,6 @@ import "./LandingPage.css";
 import "../../Styles/App.css";
 import Footer from "../Footer/Footer";
 import CookieConsent from "react-cookie-consent";
-import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
