@@ -27,7 +27,8 @@ body {
   flex-direction: column;
   width: 100vw;
   height: auto;
-  background-color: #1d2732;
+  background: #1d2732;
+  background: linear-gradient(120deg, #1d2732 0%, #0c273c 35%, #0a1120 100%);
   background-size: cover;
 }
 
@@ -84,12 +85,9 @@ body {
   font-size: 1.3rem;
   line-height: 2rem;
   text-align: center;
-  _background: rgba(255, 255, 255, 0.1);
   border-radius: 16px;
-  _box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(7.2px);
   -webkit-backdrop-filter: blur(7.2px);
-  _border: 1px solid var(--silver);
 }
 
 @media screen and (max-width: 768px) {

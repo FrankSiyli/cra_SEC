@@ -49,6 +49,9 @@ const About = () => {
             alt="trainingpeaks-logo"
           />
         </div>
+
+        <hr />
+
         <div className="single-content">
           <p>
             {t("aboutText_9")}
@@ -83,6 +86,9 @@ const About = () => {
             <span className="yellow-word">422km</span> Run
           </p>
         </div>
+
+        <hr />
+
         <div className="single-content">
           <p>
             {t("aboutText_15")}

@@ -16,10 +16,10 @@ const Services = () => {
     <>
       <div className="content-container">
         <div className="single-content">
-          <h1>
+          <h2>
             <span className="yellow-word">{t("servicesTitle_1_1")}</span>
             {t("servicesTitle_1_2")}
-          </h1>
+          </h2>
           <p>
             {t("servicesText_1")}
             &nbsp;
@@ -79,12 +79,14 @@ const Services = () => {
           <span className="no-slots-span">Currently no free slots</span>
         </div>
 
+        <hr />
+
         <div className="single-content">
           <div>
-            <h1>
+            <h2>
               <span className="yellow-word">1:1</span>
               {t("servicesTitle_2")}
-            </h1>
+            </h2>
             <p>swim // bike // run</p>
             <p>{t("servicesText_21")}</p>
             <p>{t("servicesText_22")}</p>
@@ -97,12 +99,14 @@ const Services = () => {
           <br />
         </div>
 
+        <hr />
+
         <div className="single-content">
           <div>
-            <h1>
+            <h2>
               <span className="yellow-word">{t("servicesTitle_3_1")}</span>
               {t("servicesTitle_3_2")}
-            </h1>
+            </h2>
             <p>{t("servicesText_25")}</p>
 
             <button className="content-button">
