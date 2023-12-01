@@ -14,10 +14,6 @@ const Services = () => {
 
   return (
     <>
-      {/* <Link to="/">
-        <img id="logo-small" src={logoSmall} alt="logo" />
-      </Link> */}
-
       <div className="content-container">
         <div className="single-content">
           <h1>
@@ -73,12 +69,14 @@ const Services = () => {
           <p>
             <span className="yellow-word">{t("servicesText_19")}</span>
           </p>
+          <span className="no-slots-span">Currently no free slots</span>
           <br />
           <p>115€ {t("servicesText_17")}</p>
           <p>{t("servicesText_20")}// swim / bike / run</p>
           <p>
             <span className="yellow-word">{t("servicesText_19")}</span>
           </p>{" "}
+          <span className="no-slots-span">Currently no free slots</span>
         </div>
 
         <div className="single-content">
@@ -109,17 +107,7 @@ const Services = () => {
 
             <button className="content-button">
               <Link target="_blank" to="https://siyli-app.vercel.app">
-                Siyli-App
-              </Link>
-            </button>
-
-            <p>{t("servicesText_27")}</p>
-            <button className="content-button">
-              <Link
-                target="_blank"
-                to="https://www.trainingpeaks.com/coach/siyli-endurance-coaching#trainingplans"
-              >
-                Trainingpeaks
+                siyli-app.de
               </Link>
             </button>
           </div>
