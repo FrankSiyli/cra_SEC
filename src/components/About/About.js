@@ -115,7 +115,7 @@ const About = () => {
           </p>
 
           <p>{t("aboutText_28")}.</p>
-          <br />
+          <hr />
           <p>All training sessions are in german and english</p>
           <img className="union" src={union} alt="english" />
           <p>if you have any questions let me know it.</p>
