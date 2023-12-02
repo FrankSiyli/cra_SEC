@@ -26,7 +26,7 @@ const About = () => {
           <h2>
             <span className="yellow-word">Moin</span>
           </h2>
-          <br />
+
           <p>{t("aboutText_1")}</p>
           <p>{t("aboutText_2")}</p>
           <p>
@@ -115,7 +115,9 @@ const About = () => {
           </p>
 
           <p>{t("aboutText_28")}.</p>
-          <hr />
+        </div>
+        <hr />
+        <div className="single-content">
           <p>All training sessions are in german and english</p>
           <img className="union" src={union} alt="english" />
           <p>if you have any questions let me know it.</p>
