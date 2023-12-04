@@ -18,8 +18,26 @@ const LandingPage = () => {
         </div>
       </div>
       <Footer />
-      <CookieConsent>
-        This website uses cookies to enhance the user experience.
+      <CookieConsent
+        acceptOnScroll="true"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          color: "#f5f4f5",
+          background: "#0b243a",
+          textAlign: "center",
+          fontSize: "1rem",
+        }}
+        buttonStyle={{
+          background: "#00a3b1",
+          color: "#1d1e22",
+          borderRadius: "5px",
+          fontSize: "1.2rem",
+        }}
+        buttonText="OK"
+      >
+        Executed google parameter: page views
       </CookieConsent>
     </>
   );
