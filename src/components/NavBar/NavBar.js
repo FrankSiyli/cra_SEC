@@ -19,13 +19,13 @@ const NavBar = () => {
 
   const [showMenu, setShowMenu] = useState(true);
   const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);
-  const [showHamburgerButton, setShowHamburgerButton] = useState(false);
+  const [showHamburgerButton, setShowHamburgerButton] = useState(true);
   const [activeButton, setActiveButton] = useState(null);
   const handleHamburgerButtonClick = () => {
     setShowHamburgerMenu(!showHamburgerMenu);
   };
 
-  useEffect(() => {
+  /* useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 20) {
         setShowMenu(false);
@@ -60,15 +60,16 @@ const NavBar = () => {
       window.removeEventListener("resize", handleResize);
       document.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, []); */
 
   const handleActiveStyle = (buttonId) => {
     setActiveButton(buttonId);
     setShowHamburgerMenu(false);
   };
+
   return (
     <>
-      {showMenu ? (
+      {/*  {showMenu ? (
         <div className="nav-bar">
           <Link
             to="/"
@@ -124,96 +125,96 @@ const NavBar = () => {
             </button>
           </div>
         </div>
-      ) : (
-        <div className="hamburger-menu">
-          <button
-            className="hamburger-button"
-            onClick={handleHamburgerButtonClick}
-          >
-            <img id="hamburger" src={hamburger} alt="hamburger menu" />
-          </button>
-          {showHamburgerMenu && (
-            <div className="menu-list">
-              <Link
-                to="/"
-                className="nav-button"
-                onClick={() => handleActiveStyle(1)}
-                style={
-                  activeButton === 1
-                    ? {
-                        scale: "1.2",
-                        rotate: "15deg",
-                      }
-                    : null
-                }
-              >
-                Home
-              </Link>
+      ) : ( */}
+      <div className="hamburger-menu">
+        <button
+          className="hamburger-button"
+          onClick={handleHamburgerButtonClick}
+        >
+          <img id="hamburger" src={hamburger} alt="hamburger menu" />
+        </button>
+        {showHamburgerMenu && (
+          <div className="menu-list">
+            <Link
+              to="/"
+              className="nav-button"
+              onClick={() => handleActiveStyle(1)}
+              style={
+                activeButton === 1
+                  ? {
+                      scale: "1.2",
+                      rotate: "15deg",
+                    }
+                  : null
+              }
+            >
+              Home
+            </Link>
 
-              <Link
-                to="/services"
-                className="nav-button"
-                onClick={() => handleActiveStyle(2)}
-                style={
-                  activeButton === 2
-                    ? {
-                        scale: "1.2",
-                        rotate: "15deg",
-                      }
-                    : null
-                }
-              >
-                Services
-              </Link>
+            <Link
+              to="/services"
+              className="nav-button"
+              onClick={() => handleActiveStyle(2)}
+              style={
+                activeButton === 2
+                  ? {
+                      scale: "1.2",
+                      rotate: "15deg",
+                    }
+                  : null
+              }
+            >
+              Services
+            </Link>
 
-              <Link
-                to="/about"
-                className="nav-button"
-                onClick={() => handleActiveStyle(3)}
-                style={
-                  activeButton === 3
-                    ? {
-                        scale: "1.2",
-                        rotate: "15deg",
-                      }
-                    : null
-                }
-              >
-                About
-              </Link>
+            <Link
+              to="/about"
+              className="nav-button"
+              onClick={() => handleActiveStyle(3)}
+              style={
+                activeButton === 3
+                  ? {
+                      scale: "1.2",
+                      rotate: "15deg",
+                    }
+                  : null
+              }
+            >
+              About
+            </Link>
 
-              <Link
-                to="/contact"
-                className="nav-button"
-                onClick={() => handleActiveStyle(4)}
-                style={
-                  activeButton === 4
-                    ? {
-                        scale: "1.2",
-                        rotate: "15deg",
-                      }
-                    : null
-                }
+            <Link
+              to="/contact"
+              className="nav-button"
+              onClick={() => handleActiveStyle(4)}
+              style={
+                activeButton === 4
+                  ? {
+                      scale: "1.2",
+                      rotate: "15deg",
+                    }
+                  : null
+              }
+            >
+              Contact
+            </Link>
+            <div>
+              <button
+                className="language-button"
+                type="button"
+                onClick={toggleLanguage}
               >
-                Contact
-              </Link>
-              <div>
-                <button
-                  className="language-button"
-                  type="button"
-                  onClick={toggleLanguage}
-                >
-                  {currentLanguage === "de" ? (
-                    <span className="fi fi-gb "></span>
-                  ) : (
-                    <span className="fi fi-de "></span>
-                  )}
-                </button>
-              </div>
+                {currentLanguage === "de" ? (
+                  <span className="fi fi-gb "></span>
+                ) : (
+                  <span className="fi fi-de "></span>
+                )}
+              </button>
             </div>
-          )}
-        </div>
-      )}
+          </div>
+        )}
+      </div>
+      {/*  )} */}
     </>
   );
 };

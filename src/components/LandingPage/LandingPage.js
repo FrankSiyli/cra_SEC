@@ -25,19 +25,27 @@ const LandingPage = () => {
           alignItems: "center",
           justifyContent: "center",
           color: "#f5f4f5",
+          marginLeft: "25%",
           background: "#0b243a",
           textAlign: "center",
           fontSize: "1rem",
+          maxWidth: "50%",
+          borderRadius: "5px",
+          marginBottom: "1%",
+          border: "#00a3b1 solid 1px",
         }}
         buttonStyle={{
           background: "#00a3b1",
-          color: "#1d1e22",
+          color: "#f5f4f5",
           borderRadius: "5px",
           fontSize: "1.2rem",
         }}
         buttonText="OK"
       >
-        Executed google parameter: page views
+        <p style={{ maxWidth: "50%", marginLeft: "25%" }}>
+          {" "}
+          Executed google parameter: page views
+        </p>
       </CookieConsent>
     </>
   );

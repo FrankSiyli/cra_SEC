@@ -40,7 +40,7 @@ const About = () => {
             <span className="yellow-word">DTU</span>
             {t("aboutText_7")}
             <span className="yellow-word">Trainingpeaks</span>
-            {t("aboutText_8")}.
+            {t("aboutText_8")}
           </p>
           <img className="about-logos" src={dtu} alt="dtu" />
           <img
@@ -56,7 +56,7 @@ const About = () => {
           <p>
             {t("aboutText_9")}
             <span className="yellow-word">{t("aboutText_10")}</span>{" "}
-            {t("aboutText_11")}.
+            {t("aboutText_11")}
           </p>
           <p>
             {t("aboutText_12")}
@@ -114,13 +114,13 @@ const About = () => {
             {t("aboutText_27")}
           </p>
 
-          <p>{t("aboutText_28")}.</p>
+          <p>{t("aboutText_28")}</p>
         </div>
         <hr />
         <div className="single-content">
           <p>All training sessions are in german and english</p>
           <img className="union" src={union} alt="english" />
-          <p>if you have any questions let me know it.</p>
+          <p>if you have any questions let me know</p>
         </div>
       </div>
     </>
