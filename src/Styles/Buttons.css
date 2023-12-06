@@ -1,11 +1,9 @@
 /* NAV-BUTTONS */
 
 .nav-button {
-  font-size: 1.2rem;
+  font-size: 1rem;
   background: none;
-  font-weight: bold;
   color: var(--silver);
-  text-decoration: none;
   padding: 0.2rem 2rem;
   transition: 0.1s linear;
   cursor: pointer;

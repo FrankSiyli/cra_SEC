@@ -3,7 +3,7 @@
   bottom: 0.5rem;
   left: 0.5rem;
   z-index: 10;
-  color: var(--silver);
+  color: var(--footer);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,7 @@
 }
 
 .footer-button {
-  color: var(--silver);
+  color: var(--footer);
   cursor: pointer;
 }
 

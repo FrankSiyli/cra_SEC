@@ -17,7 +17,8 @@ const Footer = () => {
           <Link to="datenschutz" className="footer-button">
             Datenschutz
           </Link>
-          <p class="copy">Copyright &copy; 2022-{getYear}</p>
+          <p>Cookies: Google page views</p>
+          <p>Copyright &copy; 2022-{getYear}</p>
         </div>
       </div>
     </>

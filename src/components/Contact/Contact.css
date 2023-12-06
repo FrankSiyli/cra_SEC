@@ -28,6 +28,8 @@
   padding: 1rem;
   margin: 1rem;
   border-radius: 5px;
+  background-color: var(--silver);
+  border: var(--yellow) 1px solid;
 }
 
 .label {

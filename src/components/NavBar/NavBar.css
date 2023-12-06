@@ -15,8 +15,8 @@
 .menu-list {
   position: fixed;
   z-index: 10;
-  top: 10vh;
-  right: 0;
+  top: 7vh;
+  right: 1vw;
   width: 10%;
   height: auto;
   display: flex;
@@ -26,6 +26,9 @@
   color: var(--silver);
   padding: 1%;
   gap: 1rem;
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  box-shadow: black 1px 1px 13px 1px;
 }
 
 @media screen and (max-width: 768px) {
@@ -42,9 +45,9 @@
     align-items: center;
     color: var(--silver);
     gap: 1rem;
-    background: #0e1a34;
-    box-shadow: black 2px 2px 2px 2px;
+    backdrop-filter: blur(10px);
     border-radius: 5px;
+    box-shadow: black 1px 1px 13px 1px;
   }
 }
 
