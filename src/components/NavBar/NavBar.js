@@ -29,90 +29,96 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="hamburger-menu">
+      <div className={`hamburger-menu ${showHamburgerMenu ? "menu-open" : ""}`}>
         <button
           className="hamburger-button"
           onClick={handleHamburgerButtonClick}
         >
-          <img id="hamburger" src={hamburger} alt="hamburger menu" />
+          {!showHamburgerMenu ? (
+            <img className="hamburger" src={hamburger} alt="hamburger menu" />
+          ) : (
+            <p className="x-hamburger-menu">X</p>
+          )}
         </button>
         {showHamburgerMenu && (
           <div className="menu-list">
-            <Link
-              to="/"
-              className="nav-button"
-              onClick={() => handleActiveStyle(1)}
-              style={
-                activeButton === 1
-                  ? {
-                      scale: "1.2",
-                      rotate: "10deg",
-                    }
-                  : null
-              }
-            >
-              Home
-            </Link>
-
-            <Link
-              to="/services"
-              className="nav-button"
-              onClick={() => handleActiveStyle(2)}
-              style={
-                activeButton === 2
-                  ? {
-                      scale: "1.2",
-                      rotate: "10deg",
-                    }
-                  : null
-              }
-            >
-              Services
-            </Link>
-
-            <Link
-              to="/about"
-              className="nav-button"
-              onClick={() => handleActiveStyle(3)}
-              style={
-                activeButton === 3
-                  ? {
-                      scale: "1.2",
-                      rotate: "10deg",
-                    }
-                  : null
-              }
-            >
-              About
-            </Link>
-
-            <Link
-              to="/contact"
-              className="nav-button"
-              onClick={() => handleActiveStyle(4)}
-              style={
-                activeButton === 4
-                  ? {
-                      scale: "1.2",
-                      rotate: "10deg",
-                    }
-                  : null
-              }
-            >
-              Contact
-            </Link>
-            <div>
-              <button
-                className="language-button"
-                type="button"
-                onClick={toggleLanguage}
+            <div className="nav-button-container">
+              <Link
+                to="/"
+                className="nav-button"
+                onClick={() => handleActiveStyle(1)}
+                style={
+                  activeButton === 1
+                    ? {
+                        scale: "1.2",
+                        rotate: "10deg",
+                      }
+                    : null
+                }
               >
-                {currentLanguage === "de" ? (
-                  <span className="fi fi-gb "></span>
-                ) : (
-                  <span className="fi fi-de "></span>
-                )}
-              </button>
+                Home
+              </Link>
+
+              <Link
+                to="/services"
+                className="nav-button"
+                onClick={() => handleActiveStyle(2)}
+                style={
+                  activeButton === 2
+                    ? {
+                        scale: "1.2",
+                        rotate: "10deg",
+                      }
+                    : null
+                }
+              >
+                Services
+              </Link>
+
+              <Link
+                to="/about"
+                className="nav-button"
+                onClick={() => handleActiveStyle(3)}
+                style={
+                  activeButton === 3
+                    ? {
+                        scale: "1.2",
+                        rotate: "10deg",
+                      }
+                    : null
+                }
+              >
+                About
+              </Link>
+
+              <Link
+                to="/contact"
+                className="nav-button"
+                onClick={() => handleActiveStyle(4)}
+                style={
+                  activeButton === 4
+                    ? {
+                        scale: "1.2",
+                        rotate: "10deg",
+                      }
+                    : null
+                }
+              >
+                Contact
+              </Link>
+              <div>
+                <button
+                  className="language-button"
+                  type="button"
+                  onClick={toggleLanguage}
+                >
+                  {currentLanguage === "de" ? (
+                    <span className="fi fi-gb "></span>
+                  ) : (
+                    <span className="fi fi-de "></span>
+                  )}
+                </button>
+              </div>
             </div>
           </div>
         )}

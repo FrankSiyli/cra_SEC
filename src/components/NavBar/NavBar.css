@@ -15,24 +15,31 @@
 .menu-list {
   position: fixed;
   z-index: 10;
-  top: 9vh;
-  right: 1vw;
+  top: 0;
+  right: 0;
   width: auto;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: var(--silver);
-  padding: 1%;
-  gap: 1rem;
+  max-width: 25vw;
+  height: 100vh;
+  padding: 2rem;
   backdrop-filter: blur(10px);
-  border-radius: 5px;
-  box-shadow: black 1px 1px 13px 1px;
+  box-shadow: #00a3b1 1px 1px 13px 1px;
 }
 
-#hamburger {
+.hamburger-button {
+  z-index: 20;
+}
+
+.hamburger {
   height: 3rem;
+  z-index: 20;
+}
+
+.x-hamburger-menu {
+  font-size: 2rem;
+  color: var(--silver);
+  z-index: 30;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
 }
 
 .fi {
@@ -52,7 +59,7 @@
 /* NAV-BUTTONS */
 
 .nav-button {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   background: none;
   color: var(--silver);
   padding: 0.2rem 2rem;
@@ -60,6 +67,16 @@
   cursor: pointer;
   border: none;
   text-decoration: none;
+}
+
+.nav-button-container {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--silver);
+  gap: 1rem;
 }
 
 .nav-button:hover {
