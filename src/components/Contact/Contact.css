@@ -1,26 +1,11 @@
-.contact-container {
-  position: absolute;
-  top: 0;
-  left: 0;
+.form-container {
+  margin-top: 150px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  flex-wrap: wrap;
-  height: 100vh;
-  width: 100vw;
-  background: linear-gradient(
-    170deg,
-    var(--black) 0%,
-    var(--grey) 90%,
-    var(--yellow) 92%,
-    var(--grey) 94%,
-    var(--yellow) 96%,
-    var(--grey) 98%,
-    var(--yellow) 99%,
-    var(--grey) 100%
-  );
-  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
 }
 
 .inputs {
@@ -35,14 +20,4 @@
 .label {
   color: var(--yellow);
   font-size: 1.5rem;
-}
-
-.form-container {
-  margin-top: -10rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 1rem;
 }

@@ -17,34 +17,32 @@ const Contact = () => {
 
       <Overlay />
 
-      <div className="content-container">
-        <div className="form-container">
-          <form
-            className="form"
-            action="https://formsubmit.co/info@siyli-endurance-coaching.com"
-            method="POST"
-          >
-            <p className="label">Your name</p>
-            <input type="text" className="inputs" name="name" required />
+      <div className="form-container">
+        <form
+          className="form"
+          action="https://formsubmit.co/info@siyli-endurance-coaching.com"
+          method="POST"
+        >
+          <p className="label">Your name</p>
+          <input type="text" className="inputs" name="name" required />
 
-            <p className="label">Your email</p>
-            <input type="email" className="inputs" name="email" required />
-            <br />
-            <p className="label">Feel free</p>
+          <p className="label">Your email</p>
+          <input type="email" className="inputs" name="email" required />
+          <br />
+          <p className="label">Feel free</p>
 
-            <textarea
-              type="text"
-              className="inputs"
-              name="textarea"
-              required
-              rows="5"
-            />
+          <textarea
+            type="text"
+            className="inputs"
+            name="textarea"
+            required
+            rows="5"
+          />
 
-            <button className="content-button" type="submit">
-              submit
-            </button>
-          </form>
-        </div>
+          <button className="content-button" type="submit">
+            submit
+          </button>
+        </form>
       </div>
     </>
   );

@@ -6,8 +6,8 @@ const Footer = () => {
   const getYear = new Date().getFullYear();
   return (
     <>
-      <div className="footer-container">
-        <div className="footer-elements">
+      <div className="footer-elements">
+        <div className="footer-link-elements">
           <Link to="impressum" className="footer-button">
             Impressum
           </Link>
@@ -17,9 +17,9 @@ const Footer = () => {
           <Link to="datenschutz" className="footer-button">
             Datenschutz
           </Link>
-          <p>Cookies: Google page views</p>
-          <p>Copyright &copy; 2022-{getYear}</p>
         </div>
+        <p>Cookies: Google page views</p>
+        <p>Copyright &copy; 2022-{getYear}</p>
       </div>
     </>
   );

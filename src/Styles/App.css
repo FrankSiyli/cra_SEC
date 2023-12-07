@@ -13,7 +13,7 @@
   --grey: #393f4d;
   --yellow: #00a3b1;
   --silver: #f5f4f5;
-  --footer: #f5f4f577;
+  --footer: #f5f4f5df;
   --black: #1d1e22;
 }
 
@@ -26,8 +26,10 @@ h2 {
 }
 
 html {
+  position: relative;
   overscroll-behavior: none;
   height: 100%;
+  max-width: 100vw;
   height: -webkit-fill-available;
   position: fixed;
   display: flex;
@@ -57,8 +59,10 @@ html {
 }
 
 body {
+  position: relative;
   overscroll-behavior: none;
   height: 100%;
+  max-width: 100vw;
   position: fixed;
   display: flex;
   top: 0;
@@ -141,22 +145,20 @@ body {
 
 .content-button {
   font-size: 1.2rem;
-  background: var(--yellow);
-  font-weight: bold;
-  color: var(--black);
-  text-decoration: none;
+  background: transparent;
+  color: #00a3b1;
   padding: 0.3rem 1rem;
   margin: 1rem;
   transition: 0.1s linear;
   cursor: pointer;
-  border-radius: 10px 0 10px 10px;
-  border: none;
+  border: #00a3b1 1px solid;
+  border-radius: 5px;
+  backdrop-filter: blur(20px);
+  box-shadow: #0a1120 1px 1px 13px 1px;
 }
 
 .content-button:hover {
-  border-radius: 10px 10px 10px 0;
-  text-decoration: underline;
-  color: var(--black);
+  border-radius: 7px;
 }
 
 .content-button:active {
@@ -164,8 +166,8 @@ body {
 }
 
 .content-button a {
-  color: var(--black);
   text-decoration: none;
+  color: #00a3b1;
 }
 
 .hamburger-button {
