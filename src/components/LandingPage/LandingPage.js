@@ -8,7 +8,7 @@ const LandingPage = () => {
     <>
       <div className="landing-page-upper-container">
         <div className="landing-page-text-container">
-          <h1 className="landing-text-1">
+          <h1 className="">
             <span className="yellow-word">LIFE</span> is good.{" "}
           </h1>
           <h1 className="landing-text-2">
