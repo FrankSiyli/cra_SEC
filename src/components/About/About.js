@@ -6,7 +6,6 @@ import dtu from "../../images/dtu.png";
 import trainingpeaksLogo from "../../images/trainingpeaks_logo_2.png";
 import union from "../../images/union.png";
 import { Link } from "react-router-dom";
-import logoSmall from "../../images/logoSmall.png";
 import deca from "../../images/deca.png";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
@@ -17,10 +16,6 @@ const About = () => {
 
   return (
     <>
-      <Link to="/">
-        <img id="logo-small" src={logoSmall} alt="logo" />
-      </Link>
-
       <div className="content-container">
         <div className="single-content">
           <h2>

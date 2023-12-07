@@ -1,20 +1,14 @@
 import React from "react";
 import "../../Styles/App.css";
 import "./Contact.css";
-import logoSmall from "../../images/logoSmall.png";
 import Overlay from "../Overlay/Overlay";
 import { useLocation } from "react-router-dom";
-import { Link } from "react-router-dom";
 
 const Contact = () => {
   const location = useLocation();
 
   return (
     <>
-      <Link to="/">
-        <img id="logo-small" src={logoSmall} alt="logo" />
-      </Link>
-
       <Overlay />
 
       <div className="form-container">

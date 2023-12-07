@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Overlay.css"; // Import your CSS file for styling the overlay
+import "./Overlay.css";
 
 const Overlay = () => {
   const [showOverlay, setShowOverlay] = useState(false);
