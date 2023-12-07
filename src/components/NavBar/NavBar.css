@@ -15,9 +15,9 @@
 .menu-list {
   position: fixed;
   z-index: 10;
-  top: 7vh;
+  top: 9vh;
   right: 1vw;
-  width: 10%;
+  width: auto;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -29,26 +29,6 @@
   backdrop-filter: blur(10px);
   border-radius: 5px;
   box-shadow: black 1px 1px 13px 1px;
-}
-
-@media screen and (max-width: 768px) {
-  .menu-list {
-    position: fixed;
-    z-index: 10;
-    top: 10vh;
-    right: 1rem;
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--silver);
-    gap: 1rem;
-    backdrop-filter: blur(10px);
-    border-radius: 5px;
-    box-shadow: black 1px 1px 13px 1px;
-  }
 }
 
 #hamburger {
@@ -67,4 +47,26 @@
 .language-button {
   background: none;
   border: none;
+}
+
+/* NAV-BUTTONS */
+
+.nav-button {
+  font-size: 1.1rem;
+  background: none;
+  color: var(--silver);
+  padding: 0.2rem 2rem;
+  transition: 0.1s linear;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+.nav-button:hover {
+  border-radius: 10px 10px 10px 0;
+  text-decoration: underline;
+}
+
+.nav-button:active {
+  transform: scale(0.95);
 }

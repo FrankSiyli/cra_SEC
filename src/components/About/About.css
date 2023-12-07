@@ -1,5 +1,5 @@
 .about-logos {
-  width: 30vw;
+  width: 50vw;
   max-width: 300px;
   height: auto;
   box-shadow: 0 4px 30px var(--black);
@@ -9,7 +9,7 @@
 }
 
 .union {
-  width: 10vw;
+  width: 30vw;
   max-width: 150px;
   height: auto;
   box-shadow: 0 4px 30px var(--black);
@@ -18,14 +18,14 @@
 }
 
 #deca {
-  width: 30vw;
+  width: 70vw;
   max-width: 400px;
   height: auto;
   border-radius: 5px;
   box-shadow: 0 4px 30px var(--black);
 }
 #avatar {
-  width: 40vw;
+  width: 70vw;
   max-width: 600px;
   height: auto;
   border-radius: 5px;
@@ -34,5 +34,5 @@
 }
 hr {
   max-width: 50%;
-  margin: 4rem;
+  margin: 2rem;
 }

@@ -79,8 +79,6 @@ const Services = () => {
           <span className="no-slots-span">Currently no free slots</span>
         </div>
 
-        <hr />
-
         <div className="single-content">
           <div>
             <h2>
@@ -98,8 +96,6 @@ const Services = () => {
           <img id="bike" src={bike} alt="bike" />
           <br />
         </div>
-
-        <hr />
 
         <div className="single-content">
           <div>

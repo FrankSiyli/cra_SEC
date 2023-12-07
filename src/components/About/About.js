@@ -50,8 +50,6 @@ const About = () => {
           />
         </div>
 
-        <hr />
-
         <div className="single-content">
           <p>
             {t("aboutText_9")}
@@ -75,7 +73,7 @@ const About = () => {
           <img id="deca" src={deca} alt="deca uk" />
           <br />
           <p>
-            <span className="yellow-word">
+            <span>
               10x
               {t("aboutText_14")}
             </span>
@@ -86,8 +84,6 @@ const About = () => {
             <span className="yellow-word">422km</span> Run
           </p>
         </div>
-
-        <hr />
 
         <div className="single-content">
           <p>
@@ -116,7 +112,7 @@ const About = () => {
 
           <p>{t("aboutText_28")}</p>
         </div>
-        <hr />
+
         <div className="single-content">
           <p>All training sessions are in german and english</p>
           <img className="union" src={union} alt="english" />

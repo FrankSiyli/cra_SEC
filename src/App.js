@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { useLocation } from "react-router";
 import { AnimatePresence } from "framer-motion";
 import About from "./components/About/About";
@@ -17,9 +17,8 @@ function App() {
 
   return (
     <div className="App">
-      <Link to="/">
-        <img id="logo-small" src={logoSmall} alt="logo" />
-      </Link>
+      <img id="logo-small" src={logoSmall} alt="logo" />
+
       <NavBar />
 
       <AnimatePresence>
