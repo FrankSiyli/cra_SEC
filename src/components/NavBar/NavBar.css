@@ -1,18 +1,4 @@
-.nav-bar {
-  position: fixed;
-  z-index: 10;
-  width: auto;
-  height: 10vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--silver);
-  padding: 1%;
-  top: 0;
-  right: 0;
-}
-
-.menu-list {
+.nav-bar-active {
   position: fixed;
   z-index: 10;
   top: 0;
@@ -23,25 +9,34 @@
   padding: 2rem;
   backdrop-filter: blur(40px);
   box-shadow: #00a3b1 1px 1px 13px 1px;
+  text-shadow: #000 1px 2px 3px;
+  transition: right 0.5s ease;
+}
+.nav-bar-not-active {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: -200px;
+  width: auto;
+  max-width: 25vw;
+  height: 100vh;
+  padding: 2rem;
+  backdrop-filter: blur(40px);
+  box-shadow: #00a3b1 1px 1px 13px 1px;
+  text-shadow: #000 1px 2px 3px;
+  transition: right 0.5s ease;
 }
 
 .hamburger-button {
   z-index: 20;
 }
 
-.hamburger {
-  height: 3rem;
-  z-index: 20;
-}
-
-.x-hamburger-menu {
-  width: 2rem;
-  height: 2rem;
+.hamburger-svg {
+  width: 2.5rem;
+  height: 2.5rem;
   font-size: 2rem;
   color: var(--silver);
   z-index: 20;
-  border-radius: 5px;
-  box-shadow: #000 1px 1px 5px 1px;
 }
 
 .fi {
@@ -61,7 +56,7 @@
 /* NAV-BUTTONS */
 
 .nav-button {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   background: none;
   color: var(--silver);
   padding: 0.2rem 2rem;
@@ -72,7 +67,7 @@
 }
 
 .nav-button-container {
-  margin-top: 5vh;
+  margin-top: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

@@ -49,10 +49,12 @@
 .landing-text-1 {
   animation: 3s ease-in-out slideInFromLeft;
   visibility: visible;
+  text-shadow: #000 1px 2px 3px;
 }
 
 .landing-text-2 {
   animation: 3s ease-in-out slideInFromRight;
+  text-shadow: #000 1px 2px 3px;
 }
 
 @keyframes slideInFromLeft {

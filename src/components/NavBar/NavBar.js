@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./NavBar.css";
 import "../../Styles/App.css";
-import hamburger from "../../images/hamburger.png";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
@@ -16,26 +15,43 @@ const NavBar = () => {
     i18n.changeLanguage(newLanguage);
   };
 
-  const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);
   const [activeButton, setActiveButton] = useState(1);
+  const [showNavBar, setShowNavBar] = useState("nav-bar-not-active");
   const handleHamburgerButtonClick = () => {
-    setShowHamburgerMenu(!showHamburgerMenu);
+    const navBarToggle =
+      showNavBar === "nav-bar-not-active"
+        ? "nav-bar-active"
+        : "nav-bar-not-active";
+    setShowNavBar(navBarToggle);
   };
 
   const handleActiveStyle = (buttonId) => {
     setActiveButton(buttonId);
-    setShowHamburgerMenu(false);
+    setShowNavBar("nav-bar-not-active");
   };
 
   return (
     <>
-      <div className={`hamburger-menu ${showHamburgerMenu ? "menu-open" : ""}`}>
+      <div>
         <button
           className="hamburger-button"
           onClick={handleHamburgerButtonClick}
         >
-          {!showHamburgerMenu ? (
-            <img className="hamburger" src={hamburger} alt="hamburger menu" />
+          {showNavBar === "nav-bar-not-active" ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="hamburger-svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +59,7 @@ const NavBar = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6 x-hamburger-menu"
+              className="hamburger-svg"
             >
               <path
                 strokeLinecap="round"
@@ -53,8 +69,8 @@ const NavBar = () => {
             </svg>
           )}
         </button>
-        {showHamburgerMenu && (
-          <div className="menu-list">
+        {showNavBar && (
+          <div className={showNavBar}>
             <div className="nav-button-container">
               <Link
                 to="/"
@@ -65,6 +81,7 @@ const NavBar = () => {
                     ? {
                         scale: "1.2",
                         rotate: "10deg",
+                        color: "#00a3b1",
                       }
                     : null
                 }
@@ -81,6 +98,7 @@ const NavBar = () => {
                     ? {
                         scale: "1.2",
                         rotate: "10deg",
+                        color: "#00a3b1",
                       }
                     : null
                 }
@@ -97,6 +115,7 @@ const NavBar = () => {
                     ? {
                         scale: "1.2",
                         rotate: "10deg",
+                        color: "#00a3b1",
                       }
                     : null
                 }
@@ -113,6 +132,7 @@ const NavBar = () => {
                     ? {
                         scale: "1.2",
                         rotate: "10deg",
+                        color: "#00a3b1",
                       }
                     : null
                 }
