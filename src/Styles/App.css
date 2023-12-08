@@ -162,7 +162,11 @@ body {
 }
 
 .content-button:hover {
-  border-radius: 7px;
+  color: #f5f4f5;
+}
+
+.content-button:hover a {
+  color: #f5f4f5;
 }
 
 .content-button:active {
