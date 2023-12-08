@@ -4,7 +4,7 @@
   height: auto;
   margin: 1rem;
   border-radius: 5px;
-  box-shadow: 0 4px 30px var(--black);
+  box-shadow: 0 4px 30px #000;
 }
 
 #bike {
@@ -12,7 +12,7 @@
   max-width: 400px;
   height: auto;
   border-radius: 5px;
-  box-shadow: 0 4px 30px var(--black);
+  box-shadow: 0 4px 30px #000;
 }
 
 #the-brutal {
@@ -20,7 +20,7 @@
   max-width: 400px;
   height: auto;
   border-radius: 5px;
-  box-shadow: 0 4px 30px var(--black);
+  box-shadow: 0 4px 30px #000;
 }
 
 h2 {
