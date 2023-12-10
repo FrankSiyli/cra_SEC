@@ -1,3 +1,9 @@
+.landing-page-upper-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
 /* LOGO */
 
 .logo-container {

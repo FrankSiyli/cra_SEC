@@ -14,7 +14,8 @@
   margin: 1rem;
   border-radius: 5px;
   background-color: var(--silver);
-  border: var(--yellow) 1px solid;
+  border: var(--yellow) 2px solid;
+  box-shadow: #000 1px 1px 6px 0px;
 }
 
 .label {

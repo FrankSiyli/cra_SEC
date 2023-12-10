@@ -8,7 +8,8 @@
   height: 100vh;
   padding: 2rem;
   backdrop-filter: blur(40px);
-  box-shadow: #00a3b1 1px 1px 13px 1px, #000 5px 5px 50px 5px;
+  box-shadow: #00a3b1 1px 1px 13px 1px, #00a2b193 3px 3px 13px 3px,
+    #000 5px 5px 50px 5px;
   text-shadow: #000 1px 2px 3px;
   transition: right 0.5s ease;
 }
