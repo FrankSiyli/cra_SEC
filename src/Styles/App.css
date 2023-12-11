@@ -158,14 +158,17 @@ body {
   border: #00a3b1 1px solid;
   border-radius: 5px;
   backdrop-filter: blur(20px);
-  box-shadow: #00a3b1 0px 0px 1px 1px, #00a2b193 0px 0px 10px 1px,
-    #0000007a 0px 0px 20px 0px;
+  border: 1px solid #ffffff9d;
+  text-shadow: #000 1px 2px 3px;
+  box-shadow: #00a3b1 1px 1px 5px 1px, #00a2b193 2px 2px 20px 1px,
+    #000 2px 2px 15px 0px;
 }
 
 .content-button:hover {
-  box-shadow: #00a3b1 1px 1px 5px 1px, #00a2b193 2px 2px 20px 1px,
-    #000 2px 2px 15px 0px;
-  transform: scale(1.01);
+  box-shadow: #00a3b1 0px 0px 2px 0px, #00a2b193 0px 0px 10px 0px,
+    #000 0px 0px 20px 2px;
+  border: 1px solid #00a3b1;
+  text-shadow: #000 1px 2px 3px;
 }
 
 .content-button:active {

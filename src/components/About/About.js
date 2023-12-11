@@ -7,6 +7,10 @@ import trainingpeaksLogo from "../../images/trainingpeaks_logo_2.png";
 import union from "../../images/union.png";
 import { Link } from "react-router-dom";
 import deca from "../../images/deca.png";
+import decaTemp from "../../images/decaTemp.png";
+import decaBike from "../../images/decaBike.png";
+import decaSwim from "../../images/decaSwim.png";
+import decaRun from "../../images/decaRun.png";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
 
@@ -78,6 +82,17 @@ const About = () => {
             <span className="yellow-word">1800km</span> Bike -{" "}
             <span className="yellow-word">422km</span> Run
           </p>
+          <br />
+          <div className="temp-container">
+            <img id="decaTemp" src={decaTemp} alt="deca uk" />
+            <span id="snowman">⛄️</span>
+          </div>
+          <br />
+          <div className="deca-image-container">
+            <img id="decaSwim" src={decaSwim} alt="deca uk" />
+            <img id="decaBike" src={decaBike} alt="deca uk" />
+            <img id="decaRun" src={decaRun} alt="deca uk" />
+          </div>
         </div>
 
         <div className="single-content">

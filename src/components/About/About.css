@@ -18,12 +18,64 @@
 }
 
 #deca {
-  width: 70vw;
-  max-width: 400px;
+  width: 60vw;
+  max-width: 300px;
   height: auto;
   border-radius: 5px;
   box-shadow: 0 4px 30px #000;
 }
+
+.temp-container {
+  position: relative;
+}
+
+#decaTemp {
+  width: 50vw;
+  max-width: 200px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 30px #000;
+}
+
+#snowman {
+  position: absolute;
+  z-index: 20;
+  top: -1.2rem;
+  right: -0.5rem;
+  filter: drop-shadow(-0.1rem 0.5rem 0.1rem rgba(0, 0, 0, 0.382));
+}
+
+.deca-image-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+#decaBike {
+  width: 50vw;
+  max-width: 200px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 30px #000;
+}
+#decaSwim {
+  width: 50vw;
+  max-width: 200px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 30px #000;
+}
+#decaRun {
+  width: 50vw;
+  max-width: 200px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 30px #000;
+}
+
 #avatar {
   width: 70vw;
   max-width: 600px;
