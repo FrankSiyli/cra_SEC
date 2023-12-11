@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "../../Styles/App.css";
 import "./Services.css";
 import bike from "../../images/bike.png";
-import brutal from "../../images/theBrutal.png";
 import { useTranslation } from "react-i18next";
 import trainingpeaksCard from "../../images/TrainingPeaks_Product.png";
 import { useLocation } from "react-router-dom";
@@ -118,8 +117,6 @@ const Services = () => {
               </Link>
             </button>
           </div>
-          <br />
-          <img id="the-brutal" src={brutal} alt="brutal triathlon" />
           <br />
         </div>
       </div>

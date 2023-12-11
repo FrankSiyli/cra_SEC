@@ -1,13 +1,12 @@
 import React from "react";
 import "../../Styles/App.css";
 import "./About.css";
-import avatar from "../../images/avatar.png";
+import brutal from "../../images/theBrutal.png";
 import dtu from "../../images/dtu.png";
 import trainingpeaksLogo from "../../images/trainingpeaks_logo_2.png";
 import union from "../../images/union.png";
 import { Link } from "react-router-dom";
 import deca from "../../images/deca.png";
-import decaTemp from "../../images/decaTemp.png";
 import decaBike from "../../images/decaBike.png";
 import decaSwim from "../../images/decaSwim.png";
 import decaRun from "../../images/decaRun.png";
@@ -34,7 +33,8 @@ const About = () => {
             {t("aboutText_5")}
           </p>
           <br />
-          <img id="avatar" src={avatar} alt="itsme" />
+          <img id="the-brutal" src={brutal} alt="brutal triathlon" />
+
           <br />
           <p>
             {t("aboutText_6")}
