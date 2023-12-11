@@ -25,7 +25,7 @@ const About = () => {
           <h2>
             <span className="yellow-word">Moin</span>
           </h2>
-
+          <br />
           <p>{t("aboutText_1")}</p>
           <p>{t("aboutText_2")}</p>
           <p>
@@ -33,7 +33,9 @@ const About = () => {
             <span className="yellow-word">{t("aboutText_4")}</span>
             {t("aboutText_5")}
           </p>
+          <br />
           <img id="avatar" src={avatar} alt="itsme" />
+          <br />
           <p>
             {t("aboutText_6")}
             <span className="yellow-word">DTU</span>
@@ -41,15 +43,18 @@ const About = () => {
             <span className="yellow-word">Trainingpeaks</span>
             {t("aboutText_8")}
           </p>
+          <br />
           <img className="about-logos" src={dtu} alt="dtu" />
           <img
             className="about-logos"
             src={trainingpeaksLogo}
             alt="trainingpeaks-logo"
           />
+          <br />
         </div>
 
         <div className="single-content">
+          <br />
           <p>
             {t("aboutText_9")}
             <span className="yellow-word">{t("aboutText_10")}</span>{" "}
@@ -69,7 +74,9 @@ const About = () => {
             </Link>
           </p>
           <br />
+          <br />
           <img id="deca" src={deca} alt="deca uk" />
+          <br />
           <br />
           <p>
             <span>
@@ -82,6 +89,7 @@ const About = () => {
             <span className="yellow-word">1800km</span> Bike -{" "}
             <span className="yellow-word">422km</span> Run
           </p>
+
           <br />
           <div className="temp-container">
             <img id="decaTemp" src={decaTemp} alt="deca uk" />
@@ -93,9 +101,12 @@ const About = () => {
             <img id="decaBike" src={decaBike} alt="deca uk" />
             <img id="decaRun" src={decaRun} alt="deca uk" />
           </div>
+          <br />
+          <br />
         </div>
 
         <div className="single-content">
+          <br />
           <p>
             {t("aboutText_15")}
             <span className="yellow-word">{t("aboutText_16")}</span>
@@ -121,12 +132,15 @@ const About = () => {
           </p>
 
           <p>{t("aboutText_28")}</p>
+          <br />
         </div>
 
         <div className="single-content">
+          <br />
           <p>All training sessions are in german and english</p>
           <img className="union" src={union} alt="english" />
           <p>if you have any questions let me know</p>
+          <br />
         </div>
       </div>
     </>

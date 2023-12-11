@@ -20,6 +20,7 @@ const Services = () => {
             <span className="yellow-word">{t("servicesTitle_1_1")}</span>
             {t("servicesTitle_1_2")}
           </h2>
+          <br />
           <p>
             {t("servicesText_1")}
             &nbsp;
@@ -47,11 +48,13 @@ const Services = () => {
             <span className="yellow-word">{t("servicesText_8")}</span>
           </p>
           <p>{t("servicesText_9")}</p>
+          <br />
           <img
             id="trainingpeaks-card"
             src={trainingpeaksCard}
             alt="trainingpeaks"
           />
+          <br />
           <p>{t("servicesText_10")}</p>
           <p>{t("servicesText_11")}</p>
           <p>{t("servicesText_12")}</p>
@@ -64,6 +67,7 @@ const Services = () => {
             <span className="yellow-word">{t("servicesText_16")}</span>
           </p>
           <br />
+          <br />
           <p>150€ {t("servicesText_17")}</p>
           <p>{t("servicesText_18")}</p>
           <p>
@@ -75,8 +79,9 @@ const Services = () => {
           <p>{t("servicesText_20")}// swim / bike / run</p>
           <p>
             <span className="yellow-word">{t("servicesText_19")}</span>
-          </p>{" "}
+          </p>
           <span className="no-slots-span">Currently no free slots</span>
+          <br />
         </div>
 
         <div className="single-content">
@@ -85,6 +90,7 @@ const Services = () => {
               <span className="yellow-word">1:1</span>
               {t("servicesTitle_2")}
             </h2>
+            <br />
             <p>swim // bike // run</p>
             <p>{t("servicesText_21")}</p>
             <p>{t("servicesText_22")}</p>
@@ -103,6 +109,7 @@ const Services = () => {
               <span className="yellow-word">{t("servicesTitle_3_1")}</span>
               {t("servicesTitle_3_2")}
             </h2>
+            <br />
             <p>{t("servicesText_25")}</p>
 
             <button className="content-button">
