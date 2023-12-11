@@ -91,10 +91,7 @@ const About = () => {
           </p>
 
           <br />
-          <div className="temp-container">
-            <img id="decaTemp" src={decaTemp} alt="deca uk" />
-            <span id="snowman">⛄️</span>
-          </div>
+
           <br />
           <div className="deca-image-container">
             <img id="decaSwim" src={decaSwim} alt="deca uk" />
