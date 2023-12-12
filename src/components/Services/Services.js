@@ -46,6 +46,8 @@ const Services = () => {
             {t("servicesText_7")}
             <span className="yellow-word">{t("servicesText_8")}</span>
           </p>
+          <span className="yellow-word">{t("servicesText_16")}</span>
+
           <p>{t("servicesText_9")}</p>
           <br />
           <img
@@ -53,19 +55,7 @@ const Services = () => {
             src={trainingpeaksCard}
             alt="trainingpeaks"
           />
-          <br />
-          <p>{t("servicesText_10")}</p>
-          <p>{t("servicesText_11")}</p>
-          <p>{t("servicesText_12")}</p>
-          <p>{t("servicesText_13")}</p>
-          <p>{t("servicesText_14")}</p>
-          <p>
-            <span className="yellow-word">{t("servicesText_15")}</span>
-          </p>
-          <p>
-            <span className="yellow-word">{t("servicesText_16")}</span>
-          </p>
-          <br />
+
           <br />
           <p>150€ {t("servicesText_17")}</p>
           <p>{t("servicesText_18")}</p>
@@ -86,25 +76,6 @@ const Services = () => {
         <div className="single-content">
           <div>
             <h2>
-              <span className="yellow-word">1:1</span>
-              {t("servicesTitle_2")}
-            </h2>
-            <br />
-            <p>swim // bike // run</p>
-            <p>{t("servicesText_21")}</p>
-            <p>{t("servicesText_22")}</p>
-            <p>{t("servicesText_23")}</p>
-            <p>75€/h</p>
-            <p>{t("servicesText_24")}</p>
-          </div>
-          <br />
-          <img id="bike" src={bike} alt="bike" />
-          <br />
-        </div>
-
-        <div className="single-content">
-          <div>
-            <h2>
               <span className="yellow-word">{t("servicesTitle_3_1")}</span>
               {t("servicesTitle_3_2")}
             </h2>
@@ -116,6 +87,10 @@ const Services = () => {
                 siyli-app.de
               </Link>
             </button>
+            <br />
+            <br />
+            <img id="bike" src={bike} alt="bike" />
+            <br />
           </div>
           <br />
         </div>

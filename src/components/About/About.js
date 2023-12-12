@@ -44,12 +44,14 @@ const About = () => {
             {t("aboutText_8")}
           </p>
           <br />
-          <img className="about-logos" src={dtu} alt="dtu" />
-          <img
-            className="about-logos"
-            src={trainingpeaksLogo}
-            alt="trainingpeaks-logo"
-          />
+          <div className="about-logos-container">
+            <img className="about-logos" src={dtu} alt="dtu" />
+            <img
+              className="about-logos"
+              src={trainingpeaksLogo}
+              alt="trainingpeaks-logo"
+            />
+          </div>
           <br />
         </div>
 
@@ -99,36 +101,6 @@ const About = () => {
             <img id="decaRun" src={decaRun} alt="deca uk" />
           </div>
           <br />
-          <br />
-        </div>
-
-        <div className="single-content">
-          <br />
-          <p>
-            {t("aboutText_15")}
-            <span className="yellow-word">{t("aboutText_16")}</span>
-          </p>
-          <p>
-            {t("aboutText_17")}
-            <span className="yellow-word">{t("aboutText_18")}</span>
-          </p>
-          <p>
-            {t("aboutText_19")}
-            <span className="yellow-word">{t("aboutText_20")}</span>
-            {t("aboutText_21")}
-          </p>
-          <p>
-            {t("aboutText_22")}
-            <span className="yellow-word">{t("aboutText_23")}</span>
-            {t("aboutText_24")}
-          </p>
-          <p>{t("aboutText_25")}</p>
-          <p>
-            <span className="yellow-word">{t("aboutText_26")}</span>
-            {t("aboutText_27")}
-          </p>
-
-          <p>{t("aboutText_28")}</p>
           <br />
         </div>
 
