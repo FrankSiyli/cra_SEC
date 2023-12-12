@@ -32,6 +32,7 @@ const Contact = () => {
             required
             rows="5"
           />
+          <br />
 
           <button className="content-button" type="submit">
             submit

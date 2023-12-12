@@ -1,16 +1,21 @@
 .form-container {
-  margin-top: 150px;
+  margin: 20vh 5vw;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   gap: 1rem;
 }
 
 .inputs {
-  width: 80%;
+  width: 80vw;
+  max-width: 600px;
   padding: 1rem;
+  margin: 2rem;
   border-radius: 5px;
   background-color: var(--silver);
   border: var(--yellow) 2px solid;
