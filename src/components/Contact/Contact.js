@@ -30,7 +30,7 @@ const Contact = () => {
             className="inputs"
             name="textarea"
             required
-            rows="5"
+            rows="7"
           />
           <br />
 
