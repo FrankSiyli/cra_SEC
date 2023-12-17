@@ -4,7 +4,6 @@ import "./About.css";
 import brutal from "../../images/theBrutal.png";
 import dtu from "../../images/dtu.png";
 import trainingpeaksLogo from "../../images/trainingpeaks_logo_2.png";
-import union from "../../images/union.png";
 import { Link } from "react-router-dom";
 import deca from "../../images/deca.png";
 import decaBike from "../../images/decaBike.png";
@@ -101,14 +100,6 @@ const About = () => {
             <img id="decaRun" src={decaRun} alt="deca uk" />
           </div>
           <br />
-          <br />
-        </div>
-
-        <div className="single-content">
-          <br />
-          <p>All training sessions are in german and english</p>
-          <img className="union" src={union} alt="english" />
-          <p>if you have any questions let me know</p>
           <br />
         </div>
       </div>

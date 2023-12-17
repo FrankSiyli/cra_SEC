@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../Styles/App.css";
 import "./Services.css";
+import union from "../../images/union.png";
 import bike from "../../images/bike.png";
 import { useTranslation } from "react-i18next";
 import trainingpeaksCard from "../../images/TrainingPeaks_Product.png";
@@ -94,6 +95,11 @@ const Services = () => {
           </div>
           <br />
         </div>
+        <br />
+        <p>All training sessions are in german and english</p>
+        <img className="union" src={union} alt="english" />
+        <p>if you have any questions let me know</p>
+        <br />
       </div>
     </>
   );
