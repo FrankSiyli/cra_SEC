@@ -58,19 +58,20 @@ const Services = () => {
           />
 
           <br />
-          <p>150€ {t("servicesText_17")}</p>
+          {/* <p>150€ {t("servicesText_17")}</p> */}
+          <span className="no-slots-span">Currently no free slots</span>
           <p>{t("servicesText_18")}</p>
           <p>
             <span className="yellow-word">{t("servicesText_19")}</span>
           </p>
-          <span className="no-slots-span">Currently no free slots</span>
           <br />
-          <p>115€ {t("servicesText_17")}</p>
+          {/*           <p>115€ {t("servicesText_17")}</p>
+           */}
+          <span className="no-slots-span">Currently no free slots</span>
           <p>{t("servicesText_20")}// swim / bike / run</p>
           <p>
             <span className="yellow-word">{t("servicesText_19")}</span>
           </p>
-          <span className="no-slots-span">Currently no free slots</span>
           <br />
         </div>
 
